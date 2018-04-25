@@ -54,19 +54,19 @@
 <view class="h10"></view>
 <view class="conuserW">
   <view class="conuser">
-    <navigator url="">
+    <navigator url="/pages/component/collect/collect">
       <text>我的收藏</text>
       <view class="alt"><image src="/images/maltr.png"></image></view>
     </navigator>
   </view>
   <view class="conuser">
-    <navigator url="">
+    <navigator url="/pages/component/setaddr/setaddr">
       <text>地址管理</text>
       <view class="alt"><image src="/images/maltr.png"></image></view>
     </navigator>
   </view>
   <view class="conuser">
-    <navigator url="">
+    <navigator url="/pages/component/about/about">
       <text>关于我们</text>
       <view class="alt"><image src="/images/maltr.png"></image></view>
     </navigator>

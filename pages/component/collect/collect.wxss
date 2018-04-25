@@ -1,0 +1,183 @@
+/* pages/component/wdsc/wdsc.wxss */
+page{
+  background: #efefef;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.h15{
+  height: 15rpx;
+  
+}
+.clearfix:after{
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h120{
+  height: 120rpx;
+}
+.con-item{
+  display: none;
+}
+.con-item.on{
+  display: block;
+}
+.con-item .item{
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 30rpx 20rpx;
+  background: #fff;
+}
+.con-item .item .img{
+  width: 190rpx;
+  height:200rpx;
+}
+.con-item .item .img image{
+   width: 190rpx;
+  height:200rpx;
+}
+.con-item .item .titleC{
+  width: 500rpx;
+  height: 100rpx;
+  margin-left: 15rpx;
+}
+.con-item .item .titleC .tit{
+  font-size: 28rpx;
+  color: #292828;
+  line-height: 40rpx;
+   overflow: hidden;
+}
+.con-item .item .jg{
+  margin-top:75rpx; 
+}
+.con-item .item .titleC .tips{
+  font-size: 28rpx;
+  color: #929193;
+}
+.con-item .item .sj{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+  color: #d42d2d;
+}
+.con-item .item .qgm{
+  width: 120rpx;
+  height:50rpx;
+  border:2rpx solid #252525;
+  border-radius: 4rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.cnxh{
+  background-color: #efefef;
+}
+.cnxhtit{
+  font-size: 30rpx;
+  color: #1f1f1f;
+  padding: 40rpx 0 25rpx 0;
+  text-align: center;
+}
+.recommendxg{
+  padding: 0 16rpx;
+}
+.recommendxg view-item{
+  width: 330rpx;
+  float: left;
+  padding: 10rpx;
+  height: 490rpx;
+  margin-bottom: 15rpx;
+  background: #fff;
+}
+.recommendxg view-item .img{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item image{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item .tit{
+  font-size: 24rpx;
+  color: #212121;
+  line-height: 30rpx;
+  height: 65rpx;
+  width: 330rpx;
+  overflow: hidden;
+  margin: 10rpx 0rpx 0 0rpx;
+}
+.recommendxg view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.recommendxg view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.recommendxg view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+button::after{
+  border: 0;
+}
+.recommendxg view-item:nth-of-type(odd){
+   float: left;
+ } 
+.recommendxg view-item:nth-of-type(even){
+   float: right;
+ }
+ .tabswitch{
+   width: 750rpx;
+   padding: 0 20rpx;
+   height: 95rpx;
+   background: #fff;
+   display: flex;
+ }
+.tabswitch .titem{
+    flex: 1;
+    font-size: 28rpx;
+    color: #5d5d5d;
+    line-height: 91rpx;
+    border-bottom: 4rpx solid #fff;
+    position: relative;
+    text-align: center;
+  }
+  .tabswitch .titem.active{
+    border-bottom: 4rpx solid #23242a;
+  }
+.tabswitch .titem .num{
+  width: 33rpx;
+  height: 33rpx;
+  overflow: hidden;
+  font-size: 21rpx;
+  color: #ffffff;
+  border-radius: 50%;
+  background: #ffca12;
+  position: absolute;
+  top: 10rpx;
+  right: 25rpx;
+  line-height: 33rpx;
+  text-align: center;
+}

@@ -11,7 +11,7 @@ Page({
     dfk:[
       {
         dptit: "韩流主旗舰店",
-        url: "/pages/component/lineitem/lineitem",
+        url: "",
         list: [
           {
             goodsimg: "/images/allimg.png",
@@ -33,7 +33,7 @@ Page({
     yfk: [
       {
         dptit: "韩流主旗舰店",
-        url: "",
+        url: "/pages/component/lineitem/lineitem",
         list: [
           {
 

@@ -1,0 +1,65 @@
+<!--pages/component/wdsc/wdsc.wxml-->
+<view class="tabswitch" bindtap='navFun'>
+  <view class="titem {{tabArr.current == 0 ? 'active':''}}" data-index="0">商品<view class="num">1</view></view>
+  <view class="titem {{tabArr.current == 1 ? 'active':''}}" data-index="1">店铺</view>
+  <view class="titem {{tabArr.current == 2 ? 'active':''}}" data-index="2">乐享</view>
+  <view class="titem {{tabArr.current == 3 ? 'active':''}}" data-index="3">护肤</view>
+</view>
+<view class="h15"></view>
+<view class="con-item {{tabArr.current == 0 ? 'on':''}}">
+  <view class="hasorder" wx:if="{{wdsc}}">
+    <view class="item clearfix" wx:for="{{wdsc}}" wx:key="id">
+      <view class="fl img"><image src="{{item.goodsimg}}"></image></view>
+        <view class="fl titleC">
+          <navigator><view class="tit">{{item.goodstit}}</view></navigator>
+          <view class="clearfix jg">
+            <view class="sj fl">{{item.sj}}</view>
+            <view class="qgm fr">删除</view>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class="orderno" wx:else>
+    没有收藏
+  </view>
+</view>
+<view class="con-item {{tabArr.current ==1 ? 'on':''}}">
+  <view class="hasorder" wx:if="{{wdsc}}">
+   1
+  </view>
+  <view class="orderno" wx:else>
+    没有收藏
+  </view>
+</view>
+<view class="con-item {{tabArr.current ==2 ? 'on':''}}">
+  <view class="hasorder" wx:if="{{wdsc}}">
+   2
+  </view>
+  <view class="orderno" wx:else>
+    没有收藏
+  </view>
+</view>
+<view class="con-item {{tabArr.current ==3 ? 'on':''}}">
+  <view class="hasorder" wx:if="{{wdsc}}">
+   3
+  </view>
+  <view class="orderno" wx:else>
+    没有收藏
+  </view>
+</view>
+<!--猜你喜欢-->
+<view class="cnxh clearfix">
+<view class="cnxhtit">猜你喜欢</view>
+  <view class="recommendxg">
+    <view-item wx:for="{{cnxh}}" wx:for-index="key" wx:key="id">
+      <navigator url="{{item.navurl}}">
+        <view class="img"><image src="{{item.imgti}}"></image></view>
+        <view class="tit"><text>{{item.tit}}</text></view>
+      </navigator>
+      <view class="pj">
+        <view class="price">{{item.price}}</view>
+        <button class="jrgwc">加入购物车</button>
+      </view>
+    </view-item>
+  </view>
+</view>   

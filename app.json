@@ -23,9 +23,15 @@
     "pages/component/addaddr/addaddr",
     "pages/component/paysuccess/paysuccess",
     "pages/component/order/order",
+    "pages/component/refund/refund",
+    "pages/component/refundinfo/refundinfo",
     "pages/component/refundlist/refundlist",
     "pages/component/tkdetail/tkdetail",
-    "pages/component/coupons/coupons"
+    "pages/component/coupons/coupons",
+    "pages/component/lineitem/lineitem",
+    "pages/component/setaddr/setaddr",
+    "pages/component/collect/collect",
+    "pages/component/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",

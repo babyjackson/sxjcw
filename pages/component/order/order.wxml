@@ -29,7 +29,7 @@
         </navigator>
         <view class="btn clearfix">
           <navigator class="xian fl">取消订单</navigator>
-          <navigator class="bgred fr" url="/pages/component/ddjs/ddjs">付款</navigator>
+          <navigator class="bgred fr" url="/pages/component/balance/balance">付款</navigator>
         </view> 
       </view>
     </view>

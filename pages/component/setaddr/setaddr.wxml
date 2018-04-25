@@ -1,0 +1,38 @@
+<!--pages/component/setaddr/setaddr.wxml-->
+<view class="setaddrw" wx:if="{{address}}">
+  <view class="item" wx:for="{{address}}" wx:for-index="index" wx:key="id">
+    <view class="addr">{{item.addr}}</view>
+    <view class="name">{{item.name}}<text>{{item.phone}}</text></view>
+    <view class="h-25"></view>
+    <view class="handle clearfix">
+      <view class="default fl">
+        <view class="checked fl" wx:if="{{defalut == index}}" data-index="{{index}}" bindtap="setDafalut">
+          <image src="/img/addrdefalutico.png"></image>
+        </view>
+        <view class="icon fl" wx:else data-index="{{index}}" bindtap="setDafalut"></view>
+        默认地址
+      </view>
+      <view class="delete fr" bindtap="deleteAddr" data-index="{{index}}">
+        <view class="icon fl">
+          <image src="/img/addrdeleteico.png"></image>
+        </view>
+        删除
+      </view>
+      <navigator class="editor fr" url="/pages/component/xzdz/xzdz">
+        <view class="icon fl">
+          <image src="/img/addreditorico.png"></image>
+        </view>
+        编辑
+      </navigator>
+    </view>
+    <view class="h-20"></view>
+  </view>
+</view>
+<!--新增收货地址-->
+<view class="h-100"></view>
+<navigator class="newaddaddr">
+  <view class="shdz">
+    <view class="ico fl"><image src="/img/addaddrs.png"></image></view>
+    新增收货地址
+  </view>
+</navigator>
