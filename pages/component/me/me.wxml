@@ -1,0 +1,75 @@
+<!--pages/component/me/me.wxml-->
+<view class="grzxTop">
+  <view class="grzxtopbg">
+    <image src="/images/grzxTopbg.png"/>
+  </view>
+  <view class="kabsolute">
+    <view class="leftUserImg fl">
+      <image src="/images/photo.jpg"></image>
+    </view>
+    <view class="userName fl">
+      <view class="name">sgqwe1234</view>
+      <navigator>我的收货地址></navigator>
+    </view>
+  </view>
+</view>
+<!--我的订单-->
+<view class="myorder">
+  <view class="ckdd clearfix">
+   <text class="fl">我的订单</text>
+   <navigator url="/pages/component/order/order?id=0" class="fr">查看全部订单<text>></text></navigator>
+  </view>
+  <view class="orderMain clearfix">
+    <navigator url="/pages/component/order/order?id=1">
+      <view class="img"><image src="/images/dfk.png"></image></view>
+      <view class="text">待付款</view>
+    </navigator>
+    <navigator url="/pages/component/order/order?id=2">
+      <view class="img"><image src="/images/dfh.png"></image></view>
+      <view class="text">待发货</view>
+    </navigator>
+    <navigator url="/pages/component/order/order?id=3">
+      <view class="img"><image src="/images/dsh.png"></image></view>
+      <view class="text">待收货</view>
+    </navigator>
+    <navigator url="/pages/component/order/order?id=4">
+      <view class="img"><image src="/images/dpj.png"></image></view>
+      <view class="text">待评价</view>
+    </navigator>
+    <navigator url="/pages/component/refundlist/refundlist">
+      <view class="img"><image src="/images/tk.png"></image></view>
+      <view class="text">退款</view>
+    </navigator>
+  </view>
+</view>
+<view class="h10"></view>
+<view class="yhqw clearfix">
+  <navigator class="wrk" wx:for="{{newgn}}" wx:key="id" url="{{item.url}}">
+    <view class="wr">
+      <view class="img"><image src="{{item.imgsrc}}"></image></view>
+      <view class="text">{{item.name}}</view>
+    </view>
+  </navigator>
+</view>
+<view class="h10"></view>
+<view class="conuserW">
+  <view class="conuser">
+    <navigator url="">
+      <text>我的收藏</text>
+      <view class="alt"><image src="/images/maltr.png"></image></view>
+    </navigator>
+  </view>
+  <view class="conuser">
+    <navigator url="">
+      <text>地址管理</text>
+      <view class="alt"><image src="/images/maltr.png"></image></view>
+    </navigator>
+  </view>
+  <view class="conuser">
+    <navigator url="">
+      <text>关于我们</text>
+      <view class="alt"><image src="/images/maltr.png"></image></view>
+    </navigator>
+  </view>
+</view>
+<view class="h120"></view>

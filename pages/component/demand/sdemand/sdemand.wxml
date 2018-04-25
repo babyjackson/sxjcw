@@ -1,0 +1,68 @@
+<!--pages/component/demand/sdemand/sdemand.wxml-->
+<!--搜索-->
+<view class="searchw">
+  <view class="h-25"></view>
+  <view class="search clearfix">
+    <view class="ico fl"><icon type="search" size="20" color="#888888"/></view>
+    <input type="text" placeholder='搜索商品' disabled='true' class="fl"/>
+  </view>
+</view>
+<!--banner-->
+<view class="sban">
+  <swiper class="ban" circular="true" indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#0cc8a5">
+    <block wx:for="{{sban}}" wx:key="id">
+      <swiper-item>
+        <view class="item">
+          <image src="{{item.img}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航-->
+<view class="changenav clearfix" bindtap="changeTab">
+  <view class="fl item {{tabArr.cur == 0 ? 'active':''}}" data-index="0">供应中心</view>
+  <view class="fl item {{tabArr.cur == 1 ? 'active':''}}" data-index="1">求购中心</view>
+</view>
+<view class="h-20"></view>
+<view class="supply con-item {{tabArr.cur == 0 ? 'on':''}}">
+  <view class="item" wx:for="{{supply}}" wx:key="id">
+    <view class="ite clearfix">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="titw">
+          <view class="caps fl">{{item.tag}}</view>
+          {{item.tit}}
+        </view>
+        <view class="h-60"></view>
+        <view class="dd">
+          <view class="linkman fl">联系人：{{item.linkman}}</view>
+          <view class="way fr">议价方式：{{item.way}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--点击加载更多-->
+  <view class="loadmore">加载更多</view>
+</view>
+<view class="demand con-item {{tabArr.cur == 1 ? 'on':''}}">
+  <view class="item" wx:for="{{demand}}" wx:key="id">
+    <view class="ite">
+      <view class="dd clearfix">
+        <view class="fl caps">{{item.tag}}</view>
+        <view class="fl tit">{{item.tit}}</view>
+        <view class="fr alt">></view>
+      </view>
+      <view class="h-30"></view>
+      <view class="dt">
+        <text>采购量：{{item.quantity}}</text>
+        <text>报价期限：{{item.deadline}}</text>
+        <text>联系人：{{item.linkman}}</text>
+      </view>
+    </view>
+  </view>
+  <!--点击加载更多-->
+  <view class="loadmore">加载更多</view>
+</view>

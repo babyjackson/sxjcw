@@ -1,0 +1,38 @@
+ <!--pages/component/baike/jbk/jbk.wxml-->
+<!--头部滑动-->
+<view class="stopban">
+  <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+    <view class="item" wx:for="{{stopban}}" wx:key="id">
+      <view class="img">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="mask">
+        <view class="fl tag">{{item.tag}}</view>
+        <navigator class="fr ckxq" url="{{item.url}}">查看详情</navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!--百科导航-->
+<view class="bknav clearfix">
+  <view class="fl item {{selectedNav == index ? 'active':''}}" data-index="{{index}}" wx:for="{{bknav}}" wx:key="id" wx:for-index="index" bindtap="changenav">
+    {{item.nav}}
+  </view>
+</view>
+<view class="baikew">
+  <navigator class="item clearfix" wx:for="{{baike}}" wx:key="id">
+    <view class="dl fl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="h-60"></view>
+      <view class="dd">
+        <text>{{item.tag}}</text>·
+        <text>{{num}}人游览</text>
+      </view>
+    </view>
+    <view class="figure fr">
+      <image src="{{item.img}}"></image>
+    </view>
+  </navigator>
+  <!--点击加载更多-->
+  <view class="loadmore">加载更多</view>
+</view>

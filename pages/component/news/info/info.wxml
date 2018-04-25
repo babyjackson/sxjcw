@@ -1,0 +1,51 @@
+<!--pages/component/news/info/info.wxml-->
+<!--轮播图-->
+<view class="infoban">
+  <swiper class="ban" circular="true" indicator-dots="true" indicator-color='#ffffff' indicator-active-color='#0cc8a5'>
+    <block wx:for="{{infoban}}" wx:key="id">
+      <swiper-item>
+        <view class="item">
+          <view class="bgimg">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="capw">
+            <view class="titw">
+              <view class="tag fl">{{item.tag}}</view>
+              <view class="tit fl">{{item.tit}}</view>
+            </view>
+            <view class="tips">{{item.tips}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--导航-->
+<view class="changenavw">
+  <view class="changenav" bindtap='changetab'>
+    <view class="item {{tabArr.cur == 0 ? 'active':''}}" data-index="0">全部资讯</view>
+    <view class="item {{tabArr.cur == 1 ? 'active':''}}" data-index="1">装修案例</view>
+    <view class="item {{tabArr.cur == 2 ? 'active':''}}" data-index="2">市场动态</view>
+    <view class="item {{tabArr.cur == 3 ? 'active':''}}" data-index="3">最新资讯</view>
+  </view>
+</view>
+<view class="con-item {{tabArr.cur == 0 ? 'on':''}}">
+  <navigator class="item" wx:for="{{infoitem}}" wx:key="id" url="{{item.url}}">
+    <view class="figure fl">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="h-100"></view>
+      <view class="attend">
+        <view class="ico fl"><image src="/images/attentico.png"></image></view>
+        {{item.visit}}
+      </view>
+    </view>
+  </navigator>
+  <!--点击加载更多-->
+  <view class="loadmore">加载更多</view>
+</view>  
+<view class="con-item {{tabArr.cur == 1 ? 'on':''}}">2</view>  
+<view class="con-item {{tabArr.cur == 2 ? 'on':''}}">3</view>  
+<view class="con-item {{tabArr.cur == 3 ? 'on':''}}">4</view>  

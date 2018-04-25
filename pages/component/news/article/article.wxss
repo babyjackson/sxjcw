@@ -1,0 +1,203 @@
+/* pages/component/news/article/article.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.h-80{
+  height: 80rpx;
+}
+page{
+  background: #f7f7f7;
+}
+.clearfix::after{
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  content: ".";
+}
+.detail{
+  padding: 0 20rpx;
+  background: #ffffff;
+}
+.detail .dtop{
+  height: 190rpx;
+  border-bottom: 2rpx dashed #ebebeb;
+}
+.detail .dtop .bigtit{
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 34rpx;
+  color: #565656;
+  font-weight: bold;
+  text-align: center;
+}
+.detail .dtop .tipw{
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 24rpx;
+  color: #616161;
+}
+.detail .dtop .tipw .time{
+  margin-left: 140rpx;
+}
+.article{
+  padding: 40rpx 0 80rpx 0;
+  font-size: 26rpx;
+  color: #0e0e0e;
+  line-height: 35rpx;
+}
+.article image{
+  display: block;
+  width: 100%;
+  margin: 25rpx 0;
+}
+
+.dianlike{
+  width: 750rpx;
+  height: 280rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.dianlike .clickzan{
+  width: 270rpx;
+  height: 80rpx;
+  background: #0cc8a5;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.dianlike .clickzan .ico{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 20rpx 25rpx 0 70rpx;
+}
+.dianlike .clickzan .ico image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+/***相似推荐***/
+.detailrecom{
+  background: #fff;
+}
+.detailrecom .rtitw{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #575757;
+  font-weight: bold;
+}
+.detailrecom .rtitw .xian{
+  width: 10rpx;
+  height: 40rpx;
+  border-radius: 5rpx;
+  background: #0cc8a5;
+  overflow: hidden;
+  margin: 25rpx 20rpx;
+}
+.con .item{
+  height: 255rpx;
+  width: 750rpx;
+  background: #ffffff;
+  margin-bottom: 20rpx;
+}
+.con .item .figure{
+  width: 300rpx;
+  height: 225rpx;
+  display: block;
+  margin: 15rpx 25rpx 15rpx 20rpx;
+  overflow: hidden;
+}
+.con .item .figure image{
+  display: block;
+  width: 300rpx;
+  height: 225rpx;
+}
+.con .item .dl{
+  width: 385rpx;
+  height: 225rpx;
+  overflow: hidden;
+  margin: 20rpx 0;
+}
+.con .item .dl .tit{
+  font-size: 30rpx;
+  color: #151515;
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+.con .item .dl .attend{
+  height: 25rpx;
+  line-height: 25rpx;
+  overflow: hidden;
+  font-size: 20rpx;
+  color: #959595;
+}
+.con .item .dl .attend .ico{
+  width: 35rpx;
+  height: 25rpx;
+}
+.con .item .dl .attend .ico image{
+  display: block;
+  width: 35rpx;
+  height: 25rpx;
+}
+/**回到顶部**/
+.fixedRight{
+  width: 90rpx;
+  height: 210rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 40rpx;
+  z-index: 500;
+}
+.fixedRight .circular{
+  width: 95rppx;
+  height: 95rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fixedRight .circular image{
+  width: 95rpx;
+  height: 95rpx;
+  display: block;
+}
+
+.fixfooter{
+  width: 720rpx;
+  height: 75rpx;
+  margin: 30rpx auto;
+  border-radius: 35rpx;
+  overflow: hidden;
+}
+.fixfooter .item{
+  width: 360rpx;
+  height: 75rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 75rpx;
+}
+.fixfooter .item .ico{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 20rpx 20rpx 0 70rpx;
+}
+.fixfooter .item .ico image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.fixfooter .item:nth-of-type(1){
+  background: #26c8e7;
+}
+.fixfooter .item:nth-of-type(2){
+  background: #12c0ad;
+}

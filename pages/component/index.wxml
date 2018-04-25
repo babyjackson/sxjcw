@@ -1,0 +1,361 @@
+<!--pages/component/index/index.wxml-->
+<view class="headerW">
+  <!--banner-->
+  <view class="ibanner">
+    <swiper class="ban" circular="true" indicator-dots="true" indicator-color="#acb1b4" indicator-active-color='#ffffff'>
+      <block wx:for="{{ibanner}}" wx:key="id">
+        <swiper-item>
+          <navigator class="img" url="{{item.url}}">
+            <image src="{{item.img}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--导航-->
+  <view class="inav">
+    <view class="h-50"></view>
+    <view class="nav clearfix">
+      <navigator class="item" wx:for="{{inav}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.ico}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+      </navigator>
+    </view>
+  </view>
+  <!--搜索-->
+  <view class="searchW">
+    <view class="search clearfix">
+      <view class="ico fl">
+        <icon type="search" size="20" color="#bcbcbc"></icon>
+      </view>
+      <view class="inp fl">
+        <input type="text" placeholder="请输入你想要搜索的关键词"></input>
+      </view>
+    </view>
+  </view>
+</view>
+<!--广告图-->
+<view class="adpost">
+  <navigator class="img" >
+    <image src="/images/adpost.jpg"></image>
+  </navigator>
+</view>
+<!--建材商城-->
+<view class="shoppingw">
+  <view class="ialltit">
+    <view class="tbg">
+      <image src="/images/ialltitbg1.png"></image>
+    </view>
+    <view class="titw">
+      <view class="zw">建材商城</view>
+      <view class="yw">[BEST SHOPPING]</view>
+    </view>
+  </view>
+  <view class="shopping">
+    <view class="shopbg">
+      <image src="/images/ishopbg.png"></image>
+    </view>
+    <view class="shop-con {{shoptab.cur == 0 ? 'on':''}}">
+      <view class="discount">
+        <image src="/images/discount8.png"></image>
+      </view>
+      <view class="fr goods">
+        <view class="kong fl"></view>
+        <navigator class="item fl" wx:for="{{latest}}" wx:key="id" url="{{item.url}}">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="price">
+            <text class="yprice">¥{{item.yprice}}</text>
+            <text class="xprice">¥{{item.xprice}}</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="shopzx1"><image src="/images/shopzx.png"></image></view>
+    </view>
+    <view class="shop-con {{shoptab.cur == 1 ? 'on':''}}">
+      <view class="discount">
+        <image src="/images/discount8.png"></image>
+      </view>
+      <view class="fr goods">
+        <view class="kong fl"></view>
+        <navigator class="item fl" wx:for="{{hottest}}" wx:key="id" url="{{item.url}}">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="price">
+            <text class="yprice">¥{{item.yprice}}</text>
+            <text class="xprice">¥{{item.xprice}}</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="shopzx2"><image src="/images/shopzx.png"></image></view>
+    </view>
+  </view>
+  <view class="changetab clearfix" bindtap="changeTab">
+    <view class="item {{shoptab.cur == 0 ? 'active':''}} fl" data-index="0">最新</view>
+    <view class="item {{shoptab.cur == 1 ? 'active':''}} fr" data-index="1">最热</view>
+  </view>
+  <view class="hb-15"></view>
+  <!--领券更优惠-->
+  <view class="coupons">
+    <view class="etit">
+      <view class="xian fl">
+        <image src="/images/etitxianl.png"></image>
+      </view>
+      领券更优惠
+      <view class="xian fr">
+        <image src="/images/etitxianr.png"></image>
+      </view>
+    </view>
+    <view class="coupon">
+      <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+        <view class="item" wx:for="{{coupons}}" wx:key="id">
+          <view class="coupbg">
+            <image src="/images/coupbg.png"></image>
+          </view>
+          <view class="coup">
+            <view class="scoup">
+              <view class="clearfix">
+                <view class="price fl">{{item.price}}</view>
+                <view class="dl fl">
+                  <view class="dd">元优惠券</view>
+                  <view class="man">满{{item.man}}元可用</view>
+                </view>
+              </view>
+              <view class="time">使用期限：{{item.datestart}}~{{item.dateend}}</view>
+            </view>
+            <view class="cbtn">
+              <image src="/images/coupljlq.png"></image>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="hb-15"></view>
+  <!--玩转建材城-->
+  <view class="goodslist">
+    <view class="etit">
+      <view class="xian fl">
+        <image src="/images/etitxianl.png"></image>
+      </view>
+      玩转建材城
+      <view class="xian fr">
+        <image src="/images/etitxianr.png"></image>
+      </view>
+    </view>
+    <view class="glist clearfix">
+      <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+        <navigator class="item" wx:for="{{eshoplist}}" wx:key="id" url="{{item.url}}">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="tit">{{item.tit}}</view>
+          <view class="price">
+            <text class="yprice">¥{{item.yprice}}</text>
+            <text class="xprice">¥{{item.xprice}}</text>
+          </view>
+        </navigator>
+      </scroll-view>
+    </view>
+    <!--特卖-->
+    <view class="specialsale">
+      <navigator class="item fl clearfix">
+        <view class="dl fl">
+          <view class="tit">
+            <view class="ico fl"><image src="/images/tmico1.png"></image></view>
+            建材特卖
+          </view>
+          <view class="tips">半价好物抢不停</view>
+        </view>
+        <view class="figure fr">
+          <image src="/images/tmimg1.png"></image>
+        </view>
+      </navigator>
+      <navigator class="item fr clearfix">
+        <view class="dl fl">
+          <view class="tit">
+            <view class="ico fl"><image src="/images/tmico2.png"></image></view>
+            电器专场
+          </view>
+          <view class="tips">半价好物抢不停</view>
+        </view>
+        <view class="figure fr">
+          <image src="/images/tmimg2.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!--广告图-->
+  <view class="advershop">
+    <navigator>
+      <image src="/images/adpost2.jpg"></image>
+    </navigator>
+  </view>
+  <view class="h-30"></view>
+</view>
+<!--建材百科-->
+<view class="baikew">
+  <view class="ialltit">
+    <view class="tbg">
+      <image src="/images/ialltitbg2.png"></image>
+    </view>
+    <view class="titw">
+      <view class="zw bai">建材百科</view>
+      <view class="yw bai">[BEST KNOWLEDGE]</view>
+    </view>
+  </view>
+  <view class="tagw">
+    <view class="etit">
+      <view class="xian fl">
+        <image src="/images/etitxianl.png"></image>
+      </view>
+      大家都在找
+      <view class="xian fr">
+        <image src="/images/etitxianr.png"></image>
+      </view>
+    </view>
+    <view class="tag clearfix">
+      <navigator class="item fl" wx:for="{{bktag}}" wx:key="id" url="{{item.url}}">{{item.tag}}</navigator>
+    </view>
+  </view>
+  <view class="h-20"></view>
+  <view class="baike">
+    <navigator class="item" url="{{baike.url}}">
+      <view class="bkbg">
+        <image src="/images/ibaikeimg.jpg"></image>
+      </view>
+      <view class="bk">
+        <view class="bktop clearfix">
+          <view class="fl tips">{{baike.tips}}</view>
+          <view class="fl tit">{{baike.tit}}</view>
+        </view>
+        <view class="dl clearfix">
+          <view class="pname fl">{{baike.pname}}</view>
+          <view class="time fl">{{baike.time}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="hb-15"></view>
+<!--建材品牌-->
+<view class="brandw">
+  <view class="ialltit">
+    <view class="tbg">
+      <image src="/images/ialltitbg1.png"></image>
+    </view>
+    <view class="titw">
+      <view class="zw">建 材 品 牌</view>
+      <view class="yw">[BEST BRAND]</view>
+    </view>
+  </view>
+  <view class="brandbanw">
+    <view class="brandbanbg">
+      <image src="/images/ibrandban.jpg"></image>
+    </view>
+    <view class="brandban">
+      <swiper class="brban" circular="true" indicator-dots="true" indicator-color="#acb1b4" indicator-active-color='#ffffff'>
+        <block  wx:for="{{brandban}}" wx:key="id">
+          <swiper-item>
+            <view class="itemw clearfix">
+              <navigator class="item fl" wx:for="{{item.logo}}" wx:for-item="logo" wx:key="id" url="{{logo.url}}">
+                <image src="{{logo.img}}"></image>
+              </navigator>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--更多品牌商品-->
+  <view class="morebrand">
+    <view class="h-30"></view>
+    <view class="brandgoods clearfix">
+      <view class="item fl" wx:for="{{gbrand}}" wx:key="id">
+        <navigator class="goods" url="{{item.gurl}}">
+          <image src="{{item.goods}}"></image>
+        </navigator>
+        <view class="gbrand">
+          <view class="bgbrand">
+            <image src="/images/ibrandlogobg.jpg"></image>
+          </view>
+          <view class="logo" url="{{item.burl}}">
+            <image src="{{item.brand}}"></image>
+          </view>
+        </view>
+        <view class="bname">{{item.bname}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="hb-20"></view>
+<!--建材资讯-->
+<view class="informw">
+  <view class="ialltit">
+    <view class="tbg">
+      <image src="/images/ialltitbg1.png"></image>
+    </view>
+    <view class="titw">
+      <view class="zw">建 材 资 讯</view>
+      <view class="yw">[BEST NEWS]</view>
+    </view>
+  </view>
+  <view class="inform">
+    <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+      <navigator class="item" wx:for="{{inform}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="infodl">
+          <view class="xianimg"></view>
+          <view class="tag">
+            {{item.tag}}
+          </view>
+          <view class="h-15"></view>
+          <view class="tit">
+            {{item.tit}}
+          </view>
+          <view class="text">{{item.tips}}</view>
+          <view class="h-50"></view>
+          <view class="dd clearfix">
+            <view class="date fl">
+              <view class="ico fl"><image src="/images/itimeico.png"></image></view>
+              {{item.time}}
+            </view>
+            <view class="zan fr">
+              <view class="ico fl"><image src="/images/izanico.png"></image></view>
+              {{item.zan}}
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+</view>
+<view class="hb-20"></view>
+ <!--给您推荐-->
+ <view class="recommonw">
+  <view class="ialltit">
+    <view class="tbg">
+      <image src="/images/ialltitbg1.png"></image>
+    </view>
+    <view class="titw">
+      <view class="zw">给 您 推 荐</view>
+      <view class="yw">[BEST RECOMMEND]</view>
+    </view>
+  </view>
+  <view class="recommon clearfix">
+    <navigator class="item fl"  wx:for="{{recommon}}" wx:key="id" url="{{item.url}}">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="tit">{{item.tit}}</view>
+      <view class="h-50"></view>
+      <view class="price">¥{{item.price}}</view>
+    </navigator>
+  </view>
+ </view>

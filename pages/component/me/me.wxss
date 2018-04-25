@@ -1,0 +1,185 @@
+/* pages/component/me/me.wxss */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.grzxTop{
+  width: 100%;
+  height: 370rpx;
+  background-color: #007095;
+  position: relative;
+}
+.grzxTop .grzxtopbg{
+  width: 100%;
+  height: 370rpx;
+  
+}
+.grzxTop .grzxtopbg image{
+  width: 100%;
+  height:370rpx;
+  position: absolute;
+  z-index: 2;
+}
+.grzxTop .kabsolute{
+  position: absolute;
+  width: 100%;
+  height: 370rpx;
+  top:0;
+  overflow: hidden;
+  z-index: 5;
+}
+.grzxTop .leftUserImg{
+  width: 170rpx;
+  height: 170rpx;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  margin: 100rpx 50rpx;
+  border:1px solid #ffffff;
+  overflow: hidden;
+}
+.grzxTop .leftUserImg image{
+  width: 170rpx;
+  height: 170rpx;
+}
+.grzxTop .userName{
+  width: 390rpx;
+  height: 170rpx;
+  margin: 100rpx 0;
+  padding: 50rpx 0 20rpx 0;
+}
+.grzxTop .userName .name{
+  color: #ffffff;
+  font-size: 35rpx;
+}
+.grzxTop .userName navigator{
+  font-size: 22rpx;
+  color: #ffffff;
+}
+.ckdd{
+width: 100%;
+height: 90rpx;
+line-height: 90rpx;
+border-bottom: 2px solid #e5e5e5;
+}
+.ckdd text{
+  font-size: 30rpx;
+  color: #020202;
+  margin-left: 25rpx;
+}
+.ckdd navigator{
+  font-size: 28rpx;
+  color: #5e5e5e;
+}
+.ckdd navigator text{
+  font-size: 35rpx;
+  color: #cbcbcb;
+  font-weight: bold;
+  margin-left: 5rpx;
+  margin-right: 25rpx;
+}
+.orderMain{
+  width: 100%;
+  height: 175rpx;
+  border-bottom: 2px solid #e5e5e5;
+}
+.orderMain navigator{
+  width: 20%;
+  float: left;
+}
+.orderMain .img{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 40rpx auto 10rpx;
+}
+.orderMain .img image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.orderMain .text{
+  text-align: center;
+  font-size: 28rpx;
+}
+.conuser{
+  width: 100%;
+  
+   
+}
+.conuser navigator{
+  padding: 30rpx 33rpx;
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 30rpx;
+}
+.conuser navigator text{
+  font-size: 30rpx;
+  color: #403f3f;
+}
+.conuser navigator .alt{
+  float: right;
+  width: 20rpx;
+  height: 30rpx;
+  color: #87807f;
+}
+.conuser navigator .alt image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.h120{
+  height: 120rpx;
+}
+.conuserW{
+   border-top: 1px solid #e7e7e7;
+}
+.gwc navigator{
+  padding: 30rpx 33rpx;
+  line-height: 30rpx;
+}
+.gwc navigator text{
+font-size: 30rpx;
+}
+.yhqw{
+  width: 100%;
+  height: 200rpx;
+}
+.yhqw .wrk{
+  width: 25%;
+  height: 175rpx;
+  border: 0;
+  outline: 0;
+  background:rgba(0, 0, 0, 0);
+  position: relative;
+  float: left;
+}
+.yhqw .wrk .wr{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  }
+.yhqw .img{
+  width: 64rpx;
+  height: 64rpx;
+  margin: 40rpx auto 10rpx;
+}
+.yhqw .img image{
+  width: 64rpx;
+  height: 64rpx;
+  display: block;
+}
+.yhqw .text{
+  text-align: center;
+  font-size: 28rpx;
+}
+.h10{
+  height: 10rpx;
+  background: #eeeeee;
+}

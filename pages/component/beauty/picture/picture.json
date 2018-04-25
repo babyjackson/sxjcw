@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "美图欣赏",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "black"
+}

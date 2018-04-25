@@ -1,0 +1,40 @@
+<!--pages/component/category/category.wxml-->
+<!--搜索-->
+<view class="searchW">
+  <view class="search">
+    <input type="text" class="inp" placeholder="搜索京东商品" disabled="true"></input>
+    <view class="icon">
+      <icon type="search" color="#aeaeae" size="20"></icon>
+    </view>
+  </view>
+</view>
+<view class="conw clearfix">
+  <!--左侧导航-->
+  <view class="rollNavL fl">
+    <scroll-view scroll-y="true" style="height:1090rpx" scroll-with-animation="true">
+      <view class="item {{navArr.cur==index ? 'on' :''}}" wx:for="{{classifynav}}" wx:for-index="index" data-index="{{index}}" bindtap="navChange" wx:key="id">
+        {{item.navclass}}
+      </view>
+    </scroll-view>
+  </view>
+  <!--商品-->
+  <view class="goodsclass fr">
+    <scroll-view scroll-y="true" style="height:1090rpx" scroll-with-animation="true">
+      <view class="h-20"></view>
+      <navigator class="banner" url="{{classifyg.banurl}}">
+        <image src="/images/allimg.png"></image>
+      </navigator>
+      <view class="h-20"></view>
+      <view class="lab">{{classifyg.lab}}</view>
+      <view class="classifyg clearfix">
+        <navigator class="item fl" wx:for="{{classifyg.column}}" wx:for-index="index" wx:key="id" url="{{item.url}}">
+          <view class="figure">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="tit">{{item.tit}}</view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+

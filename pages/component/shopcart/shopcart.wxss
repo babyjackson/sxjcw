@@ -1,0 +1,243 @@
+/* pages/component/gywm/gywm.wxss */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h-100{
+  height: 100rpx;
+}
+page{
+  background: #eeeeee;
+}
+.myshopcarV{
+  width:100%;
+}
+.myshopcar{
+  padding: 22rpx 20rpx;
+  border-bottom: 2rpx solid #ebe9ed;
+}
+.myshopcar checkbox-group{
+  width:54rpx;
+  display:block;
+  margin-top:50rpx;
+
+}
+.myshopcar .goodsimg{
+  width: 155rpx;
+  height: 183rpx;
+  display: block;
+}
+.myshopcar .goodsimg image{
+  width: 155rpx;
+  height:183rpx;
+  display: block;
+}
+.myshopcar .goosr{
+  width: 470rpx;
+}
+.myshopcar .goosr .titW{
+  width: 480rpx;
+  position: relative;
+}
+.myshopcar .goosr .titW .tit{
+  width:410rpx;
+  font-size: 30rpx;
+  color: #1b1b1b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.myshopcar .goosr .titW .cancel{
+  width: 45rpx;
+  height:45rpx;
+  position: absolute;
+  background-color: #d2d2d2;
+  color: #fff;
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 30rpx;
+  right: 0rpx;
+  top:0rpx;
+  border-radius: 50%;
+}
+.myshopcar .goosr .jgnum{
+  width: 480rpx;
+  height: 65rpx;
+}
+.myshopcar .goosr .jgnum .price{
+  width: 115rpx;
+  font-size: 28rpx;
+  color: #d30808;
+}
+.myshopcar .goosr .jgnum .num{
+  width: 200rpx;
+  height: 60rpx;
+}
+.myshopcar .goosr .jgnum .num view{
+  width: 60rpx;
+  height: 60rpx;
+  color: #090909;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color:#f7f7f7;
+  }
+  .myshopcar .goosr .jgnum .num input{
+    width: 80rpx;
+    height: 60rpx;
+    display: block;
+    background: #f7f7f7;
+    border:0;
+    color:#090909;
+    text-align: center;
+  }
+  .h80{
+    height:80rpx;
+  }
+  .h100{
+    height:100rpx;
+  }
+  .gwcdb{
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    border-top:1rpx solid #f1f1f1;
+    bottom: 0;
+    background: #fff;
+  }
+  .gwcdb checkbox-group{
+  width:170rpx;
+  display:block;
+  margin-top:30rpx;
+  font-size: 28rpx;
+  color: #030303;
+  font-weight: bold;
+  margin-left:20rpx;
+}
+.gwcdb .sum{
+ font-size: 28rpx;
+ color: #030303;
+ line-height: 100rpx;
+ padding-right: 40rpx;
+ font-weight: bold;
+}
+.gwcdb .sum text{
+  color: #0cc8a5;
+}
+.gwcdb .accounts{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+  width: 190rpx;
+  height: 100rpx;
+  background: #0cc8a5;
+  line-height: 100rpx;
+  text-align: center;
+}  
+/*  重写 checkbox 样式  */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: #9cd344;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+.myshopcar icon{
+ margin: 75rpx 20rpx 0 0;
+}
+.gwcdb icon{
+  margin: 30rpx;
+}
+.gwcdb .quanxuan{
+  margin-top: 30rpx;
+  display: inline-block;
+}
+
+.storegoods{
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+.storegoods .store{
+  height: 89rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  padding: 20rpx 0;
+}
+.storegoods .store icon{
+  margin-left:20rpx;
+}
+.storegoods .store .ico{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 15rpx;
+}
+.storegoods .store .ico image{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.storegoods .store .storename{
+  line-height: 50rpx;
+  font-size: 25rpx;
+  color: #283133;
+  margin-left: 15rpx;
+}
+.storegoods .store .alt{
+  width: 20rpx;
+  height: 50rpx;
+  display: block;
+  margin-left: 15rpx;
+}
+.storegoods .store .alt image{
+  display: block;
+  width: 20rpx;
+  height: 50rpx;
+}
+.hasnogoods{
+  width: 750rpx;
+}
+.hasnogoods .figure{
+  width: 225rpx;
+  height: 165rpx;
+  margin: 0 auto;
+}
+.hasnogoods .figure image{
+  display: block;
+  width: 225rpx;
+  height: 165rpx;
+}
+.hasnogoods .tips{
+  width: 255rpx;
+  height: 100rpx;
+  margin: 30rpx auto;
+  text-align: center;
+  font-size: 24rpx;
+  color: #818181;
+  line-height: 45rpx;
+}
+.hasnogoods .tips text{
+  color: #2ad2ff;
+}

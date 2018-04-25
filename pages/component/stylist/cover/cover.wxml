@@ -1,0 +1,50 @@
+<!--pages/component/stylist/cover/cover.wxml-->
+<view class="ban">
+  <image src="/images/stylistban.jpg"></image>
+</view>
+<view class="stitw">
+  <view class="stit clearfix">
+    <view class="xian fl"></view>
+    设计大咖
+    <view class="xian fr"></view>
+  </view>
+</view>
+<view class="majorw">
+  <view class="malltit">
+    <view class="ico fl"><image src="/images/dpsjico.png"></image></view>
+    大牌设计
+  </view>
+  <view class="major">
+    <navigator class="item clearfix" wx:for="{{dpdesign}}" wx:key="id" url="{{item.url}}">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="name">{{item.name}}</view>
+        <view class="workyear"><text>工龄:</text>{{item.workyear}}</view>
+        <view class="spoint"><text>特长：</text>{{item.spoint}}</view>
+        <view class="hits">访问量<text>{{item.hits}}</text>次</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="majorw">
+  <view class="malltit">
+    <view class="ico fl"><image src="/images/allsjs.png"></image></view>
+    所有设计师
+  </view>
+  <view class="major">
+    <navigator class="item clearfix" wx:for="{{dpdesigns}}" wx:key="id" url="{{item.url}}">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="name">{{item.name}}</view>
+        <view class="workyear"><text>工龄:</text>{{item.workyear}}</view>
+        <view class="spoint"><text>特长：</text>{{item.spoint}}</view>
+      </view>
+    </navigator>
+  </view>
+  <!--点击加载更多-->
+  <view class="loadmore">加载更多</view>
+</view>

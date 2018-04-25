@@ -1,0 +1,231 @@
+/* pages/component/demand/sdemand/sdemand.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  height: 0;
+  content: ".";
+  display: block;
+  visibility: hidden;
+}
+page{
+  background: #f1f1f1;
+}
+.h-20{
+  height: 20rpx;
+}
+.h-25{
+  height: 25rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+.h-60{
+  height: 60rpx;
+}
+.searchw{
+  height: 110rpx;
+  width: 750rpx;
+  background: #fff;
+}
+.search{
+  height: 60rpx;
+  width: 695rpx;
+  background: #f4f4f4;
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.search .ico{
+  width: 60rpx;
+  height: 60rpx;
+}
+.search .ico icon{
+  margin: 10rpx;
+}
+.search input{
+  width: 600rpx;
+  height: 60rpx;
+  border: 0;
+  outline: 0;
+  font-size: 24rpx;
+  color: #848484;
+}
+/**轮播**/
+.sban{
+  width: 750rpx;
+  height: 300rpx;
+}
+.sban .ban{
+  width: 750rpx;
+  height: 300rpx;
+}
+.sban .ban .item{
+  width: 750rpx;
+  height: 300rpx;
+}
+.sban .ban .item image{
+  display: block;
+  width: 750rpx;
+  height: 300rpx;
+}
+/***导航***/
+.changenav{
+  width: 750rpx;
+  height: 75rpx;
+  background: #fff;
+  overflow: hidden;
+}
+.changenav .item{
+  width: 140rpx;
+  height: 75rpx;
+  margin: 0 110rpx;
+  font-size: 25rpx;
+  color: #2b2726;
+  line-height: 75rpx;
+  text-align: center;
+}
+.changenav .item.active{
+  color: #0cc8a5;
+}
+/***con**/
+.con-item{
+  display: none;
+}
+.con-item.on{
+  display: block;
+}
+.supply{
+  width: 750rpx;
+}
+.supply .item{
+  padding: 0 20rpx;
+  background: #fff;
+}
+.supply .item .ite{
+  width: 710rpx;
+  height: 270rpx;
+  border-bottom: 1rpx dashed #d2d2d2;
+}
+.supply .item .figure{
+  width: 210rpx;
+  height: 210rpx;
+  margin: 30rpx 20rpx 30rpx 0;
+}
+.supply .item .figure image{
+  display: block;
+  width: 210rpx;
+  height: 210rpx;
+}
+.supply .item .dl{
+  width: 475rpx;
+  height: 210rpx;
+  overflow: hidden;
+  margin: 30rpx 0;
+}
+.supply .item .dl .titw{
+  height: 100rpx;
+  width: 475rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #424242;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.supply .item .dl .titw .caps{
+  width: 65rpx;
+  height: 35rpx;
+  margin-top: 8rpx;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+  color: #ffffff;
+  line-height: 35rpx;
+  margin-right: 10rpx;
+  background:#0cc8a5;   
+}
+.supply .item .dl .dd .linkman{
+  font-size: 24rpx;
+  color: #424242;
+  line-height: 30rpx;
+}
+.supply .item .dl .dd .way{
+  font-size: 24rpx;
+  color: #0cc8a5;
+  line-height: 30rpx;
+}
+.loadmore{
+  width: 235rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #eeeeee;
+  margin: 35rpx auto;
+  border-radius: 35rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #353235;
+}
+
+/**求购中心***/
+.demand{
+  width: 750rpx;
+}
+.demand .item{
+  padding: 0 20rpx;
+  background: #fff;
+}
+.demand .item .ite{
+  width: 710rpx;
+  height: 100rpx;
+  border-bottom: 1rpx dashed #d2d2d2;
+  overflow: hidden;
+  padding: 35rpx 0;
+}
+.demand .item .ite .dd{
+  height: 40rpx;
+  width: 710rpx;
+  overflow: hidden;
+}
+.demand .item .ite .dd .caps{
+  width:65rpx;
+  height: 35rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  font-size: 22rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35rpx;
+  background: #0cc8a5;
+}
+.demand .item .ite .dd .tit{
+  width: 500rpx;
+  height: 35rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #373737;
+  line-height: 35rpx;
+  font-weight: bold;
+  overflow: hidden;
+}
+.demand .item .ite .dd .alt{
+  font-size: 36rpx;
+  color: #373737;
+  line-height: 35rpx;
+}
+.demand .item .ite .dt{
+  height: 35rpx;
+  overflow: hidden;
+  line-height: 35rpx;
+}
+.demand .item .ite .dt text{
+  font-size: 22rpx;
+  color: #777777;
+  line-height: 35rpx;
+  margin-right: 20rpx;
+}

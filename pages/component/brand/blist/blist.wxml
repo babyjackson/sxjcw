@@ -1,0 +1,53 @@
+<!--pages/component/brand/blist/blist.wxml-->
+<!--品牌-->
+<view class="blistban">
+  <image src="/images/brandban.jpg"></image>
+</view>
+<!--建材品牌-->
+<view class="btitw">
+  <view class="btit">
+    <view class="xian fl"></view>
+    建材品牌
+    <view class="xian fr"></view>
+  </view>
+</view>
+<!--品牌-->
+<view class="blistw">
+  <view class="itemw" wx:for="{{blist}}" wx:key="id">
+    <view class="brandt">
+      <view class="bgimg">
+        <image src="{{item.imgbg}}"></image>
+      </view>
+      <view class="bgimgmask"></view>
+      <view class="brandinfo clearfix">
+        <view class="logo fl"><image src="{{item.logo}}"></image></view>
+        <view class="dl fl">
+          <view class="dd">
+            {{item.gsname}}
+            <view class="ico fr">
+              <image src="/images/baltr.png"></image>
+            </view>
+          </view>
+          <view class="dt">{{item.num}}件商品</view>
+        </view>
+        <navigator class="ckxq fr" url="{{item.url}}">查看详情</navigator>
+      </view>
+    </view>
+    <view class="bgoods">
+      <view class="glist">
+        <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+          <navigator class="item" wx:for="{{item.glist}}" wx:key="id" wx:for-item="glist">
+            <view class="figure" url="{{glist.gurl}}">
+              <image src="{{glist.img}}"></image>
+            </view>
+            <view class="price">
+              <text class="xpri">¥{{glist.xpri}}</text>
+              <text class="ypri">¥{{glist.ypri}}</text>
+            </view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
+

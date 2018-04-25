@@ -1,0 +1,119 @@
+<!--pages/component/store/mall/mall.wxml-->
+<!--banner-->
+<view class="mbanner">
+  <swiper class="mban" circular="true" indicator-dots="true" indicator-color="rgba(49,49,49,0.8)" indicator-active-color='#0cc8a5'>
+    <block wx:for="{{mbanner}}" wx:key="id">
+      <swiper-item>
+        <navigator class="item" url="{{item.url}}">
+          <image src="{{item.img}}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--商品分类-->
+<view class="categoryw clearfix">
+  <view class="tit fl"><image src="/images/mcatetit.png"></image></view>
+  <view class="category fl">
+    <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+      <navigator class="item clearfix" wx:for="{{category}}" wx:key="id" url="{{item.url}}">
+        <view class="figure fl">
+          <view class="xian"></view>
+          <view class="img">
+            <image src="{{item.img}}"></image>
+          </view>
+        </view>
+        <view class="dl fl">
+          <view class="tags">{{item.tag}}</view>
+          <view class="tips">{{item.tip}}</view>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+</view>
+<!--品类特选-->
+<view class="specialw">
+  <view class="malltit">
+    <view class="tit">
+      <view class="xian fl"></view>
+      品牌特选
+      <view class="xian fr"></view>
+    </view>
+    <view class="tips">【每一款都出类拔萃】</view>
+  </view>
+  <view class="special">
+    <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+      <navigator class="item" wx:for="{{special}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="h-30"></view>
+        <view class="price">
+          <view class="xpri">¥{{item.xpri}}</view>
+          <view class="ypri">原价：¥{{item.ypri}}</view>
+        </view>
+      </navigator>
+    </scroll-view>
+  </view>
+</view>
+<!--爆款推荐-->
+<view class="hotstylew">
+  <view class="hotbg">
+    <image src="/images/mhotstylebg.png"></image>
+  </view>
+  <view class="hotstylep">
+    <view class="h-30"></view>
+    <view class="malltit">
+      <view class="tit">
+        <view class="xian fl"></view>
+        爆款推荐
+        <view class="xian fr"></view>
+      </view>
+      <view class="tips">【每天都有好物推荐】</view>
+    </view>
+    <view class="hotstyle clearfix">
+      <navigator class="item fl" wx:for="{{hotstyle}}" wx:key="id" url="{{item.url}}">
+        <view class="figure">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="h-20"></view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="price">
+          <view class="xpri">¥{{item.xpri}}</view>
+          <view class="ypri">原价：¥{{item.ypri}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!--还没逛够-->
+<view class="wanderw">
+  <view class="malltit">
+    <view class="tit">
+      <view class="xian fl"></view>
+      还没逛够
+      <view class="xian fr"></view>
+    </view>
+    <view class="tips">【给你更多购物享受】</view>
+  </view>
+  <view class="wander">
+    <navigator class="item clearfix" wx:for="{{wander}}" wx:key="id" url="{{item.url}}">
+      <view class="figure fl">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="dl fl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="h-20"></view>
+        <view class="price">
+          <view class="xpri">¥{{item.xpri}}</view>
+          <view class="ypri">原价：¥{{item.ypri}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <!--点击查看更多-->
+  <view class="viewmore">
+    <navigator class="more">点击查看更多>></navigator>
+  </view>
+</view>

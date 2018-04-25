@@ -1,0 +1,209 @@
+/* pages/component/news/info/info.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  content: ".";
+}
+.h-100{
+  height: 100rpx;
+}
+page{
+  background: #f6f6f6;
+}
+.infoban{
+  height: 445rpx;
+  width: 750rpx;
+  position: relative;
+}
+.infoban .ban{
+  width: 750rpx;
+  height: 445rpx;
+}
+.infoban .ban .item{
+  display: block;
+  width: 750rpx;
+  height: 445rpx;
+  position: relative;
+}
+.infoban .ban .item .bgimg{
+  display: block;
+  width: 750rpx;
+  height: 445rpx;
+}
+.infoban .ban .item .bgimg image{
+  display: block;
+  width: 750rpx;
+  height: 445rpx;
+}
+.infoban .ban .item .capw{
+  display:block;
+  width:710rpx;
+  height:140rpx;
+  position:absolute;
+  left:20rpx;
+  bottom:0rpx;
+  background:rgba(0, 0, 0, 0.5);
+}
+.infoban .ban .item .capw .titw{
+  width: 655rpx;
+  height: 40rpx;
+  overflow: hidden;
+  margin: 20rpx auto 0;
+}
+.infoban .ban .item .capw .titw .tag{
+  width: 140rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background: #0ea588;
+  font-size: 22rpx;
+  color: #ffffff;
+  line-height: 40rpx;
+  text-align: center;
+}
+.infoban .ban .item .capw .titw .tit{
+  width: 510rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  font-weight:bold;
+  overflow: hidden;
+}
+.infoban .ban .item .tips{
+  width: 520rpx;
+  font-size: 20rpx;
+  color: #a8a7a7;
+  line-height: 25rpx;
+  height: 25rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+}
+/***dian**/
+.infoban .wx-swiper-dots.wx-swiper-dots-horizontal{
+    bottom: 10rpx;
+}
+.infoban .wx-swiper-dot{
+    /*transform:rotate(60deg);*/
+    width:16rpx;
+    display: inline-flex;
+    height: 16rpx;
+    margin-left: 0rpx;
+    justify-content:space-between;
+    border-radius:0;
+ }
+.infoban .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 0; 
+    overflow: hidden;
+    border-radius:0;
+ }
+.infoban .wx-swiper-dot-active{
+    width:16rpx;
+    display: inline-flex;
+    height: 16rpx;
+    margin-left: 0rpx;
+    border-radius: 0;
+    overflow: hidden;
+    border:0;
+}
+.infoban .wx-swiper-dot-active::before{
+  content: '';
+  flex-grow: 0; 
+  overflow: hidden;
+  border-radius: 0rpx;
+}
+/***导航***/
+.changenavw{
+  width: 750rpx;
+  height: 90rpx;
+  background: #f6f6f6;
+}
+.changenav{
+  width: 710rpx;
+  margin: 0 auto;
+  display: flex;
+}
+.changenav .item{
+  flex: 4;
+  font-size: 24rpx;
+  color: #0ea588;
+  text-align: center;
+  line-height: 90rpx;
+}
+.changenav .item.active{
+  font-weight: bold;
+}
+.con-item{
+  display: none;
+}
+.con-item.on{
+  display: block;
+}
+.con-item .item{
+  height: 255rpx;
+  width: 750rpx;
+  background: #ffffff;
+  margin-bottom: 20rpx;
+}
+.con-item .item .figure{
+  width: 300rpx;
+  height: 225rpx;
+  display: block;
+  margin: 15rpx 25rpx 15rpx 20rpx;
+  overflow: hidden;
+}
+.con-item .item .figure image{
+  display: block;
+  width: 300rpx;
+  height: 225rpx;
+}
+.con-item .item .dl{
+  width: 385rpx;
+  height: 225rpx;
+  overflow: hidden;
+  margin: 20rpx 0;
+}
+.con-item .item .dl .tit{
+  font-size: 30rpx;
+  color: #151515;
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+.con-item .item .dl .attend{
+  height: 25rpx;
+  line-height: 25rpx;
+  overflow: hidden;
+  font-size: 20rpx;
+  color: #959595;
+}
+.con-item .item .dl .attend .ico{
+  width: 35rpx;
+  height: 25rpx;
+}
+.con-item .item .dl .attend .ico image{
+  display: block;
+  width: 35rpx;
+  height: 25rpx;
+}
+.loadmore{
+  width: 235rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #eeeeee;
+  margin: 35rpx auto;
+  border-radius: 35rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #353235;
+}

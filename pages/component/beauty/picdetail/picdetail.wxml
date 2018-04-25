@@ -1,0 +1,74 @@
+<!--pages/component/beauty/picdetail/picdetail.wxml-->
+<!--详情-->
+<view class="detail">
+  <view class="dtop">
+    <view class="bigtit">现代日式风格三居室图片大全</view>
+    <view class="tipw clearfix">
+      <view class="tag fl">山西建材平台</view>
+      <view class="time fl">2018-3-1</view>
+      <view class="visit fr">浏览  330</view>
+    </view>
+  </view>
+  <view class="article">
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代日式风格三居室图片大全
+    现代日式风格三居室图片大全现代
+    <image mode="widthFix" src="/images/ibaikeimg.jpg"></image>
+    <image mode="widthFix" src="/images/ibaikeimg.jpg"></image>
+    <image mode="widthFix" src="/images/ibaikeimg.jpg"></image>
+  </view>
+</view>
+<view class="dianlike">
+  <view class="h-80"></view>
+  <view class="clickzan">
+    <view class="ico fl" wx:if="{{false}}">
+      <image src="/images/shouicoed.png"></image>
+    </view>
+    <view class="ico fl" wx:else>
+      <image src="/images/shouico.png"></image>
+    </view>
+    133
+  </view>
+</view>
+<!--相似图库-->
+<view class="detailrecom">
+  <view class="rtitw">
+    <view class="xian fl"></view>
+    相似图库
+  </view>
+  <view class="picw">
+    <view class="item" wx:for="{{picture}}" wx:key="id">
+      <navigator class="figure" url="{{item.url}}">
+        <image src="{{item.img}}"></image>
+      </navigator>
+      <view class="dl">
+        <view class="tit">{{item.tit}}</view>
+        <view class="dd">
+          <view class="time fl">{{item.time}}</view>
+          <view class="ylcs fr">{{item.visit}}浏览</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--回到顶部-->
+<view class="fixedRight">
+  <view class="scroll_top circular" bindtap="goTop">
+    <image src="/images/backtop.png"></image>
+  </view>
+</view>
+<!--底部footer-->
+<view class="fixfooter clearfix">
+  <view class="fl item">
+    <view class="fl ico"><image src="/images/visitico.png"></image></view>
+    330 看过
+  </view>
+  <view class="fr item">
+    <view class="fl ico"><image src="/images/shareico.png"></image></view>
+    立即分享
+  </view>
+</view>

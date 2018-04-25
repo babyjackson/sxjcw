@@ -1,0 +1,55 @@
+<!--pages/component/brand/bshop/bshop.wxml-->
+<!--搜索-->
+<view class="searchw">
+  <view class="search">
+    <view class="ico fl"><icon type="search" color="#bbbbbb" size="20"/></view>
+    <input placeholder="搜索店铺内商品" class="fr"/>
+  </view>
+</view>
+<!--店铺-->
+<view class="brandt">
+  <view class="bgimg">
+    <image src="{{brandt.imgbg}}"></image>
+  </view>
+  <view class="bgimgmask"></view>
+  <view class="brandinfo clearfix">
+    <view class="logo fl"><image src="{{brandt.logo}}"></image></view>
+    <view class="dl fl">
+      <view class="dd">
+        {{brandt.gsname}}
+      </view>
+      <view class="dt">{{brandt.num}}件商品</view>
+    </view>
+    <view class="scdp fr" url="{{brandt.url}}">收藏店铺</view>
+  </view>
+</view>
+<!--店铺标签-->
+<view class="storetag">
+  <view class="item fl" wx:for="{{brandt.storetag}}" wx:key="id">{{item.tag}}</view>
+</view>
+<view class="h-15"></view>
+<!--商品导航-->
+<view class="navgw clearfix" bindtap="changeTab">
+  <view class="item {{tabArr.cur == 0 ? 'active':''}}" data-index="0">全部商品</view>
+  <view class="item {{tabArr.cur == 1 ? 'active':''}}" data-index="1">热销</view>
+  <view class="item {{tabArr.cur == 2 ? 'active':''}}" data-index="2">上新促销</view>
+</view>
+<!--cont-->
+<view class="item-con {{tabArr.cur == 0 ? 'on' :''}}">
+  <view class="recommon clearfix">
+    <navigator class="item fl"  wx:for="{{recommon}}" wx:key="id" url="{{item.url}}">
+      <view class="figure">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="tit">{{item.tit}}</view>
+      <view class="h-50"></view>
+      <view class="price">¥{{item.price}}</view>
+    </navigator>
+  </view>
+</view>
+<view class="item-con {{tabArr.cur == 1 ? 'on' :''}}">
+  2
+</view>
+<view class="item-con {{tabArr.cur == 2 ? 'on' :''}}">
+  3
+</view>

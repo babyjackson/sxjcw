@@ -1,0 +1,265 @@
+/* pages/component/stylist/sdetail/sdetail.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+page{
+  background: #f8f8f8;
+}
+.h-80{
+  height: 80rpx;
+}
+.h-60{
+  height: 60rpx;
+}
+.designerw{
+  width: 750rpx;
+  height: 375rpx;
+  position: relative;
+}
+.designerw .imgbg{
+  width: 750rpx;
+  height: 375rpx;
+}
+.designerw .imgbg image{
+  display: block;
+  width: 750rpx;
+  height: 375rpx;
+}
+.designer{
+  width: 750rpx;
+  height: 375rpx;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.designer .photo{
+  width: 165rpx;
+  height: 165rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border:5rpx solid #fff;
+}
+.designer .photo image{
+  display: block;
+  width: 165rpx;
+  height: 165rpx;
+}
+.designer .name{
+  font-size: 30rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 75rpx;
+}
+.designer .info{
+  text-align: center;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 30rpx;
+  height: 30rpx;
+  overflow: hidden;
+}
+.designer .info text{
+  margin:0 20rpx; 
+}
+.detail{
+  padding: 0 20rpx;
+  background: #ffffff;
+}
+.detail .dtop{
+  height: 190rpx;
+  border-bottom: 2rpx dashed #ebebeb;
+}
+.detail .dtop .bigtit{
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 34rpx;
+  color: #565656;
+  font-weight: bold;
+  text-align: center;
+}
+.detail .dtop .tipw{
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 24rpx;
+  color: #616161;
+}
+.detail .dtop .tipw .time{
+  margin-left: 140rpx;
+}
+.article{
+  padding: 40rpx 0 80rpx 0;
+  font-size: 26rpx;
+  color: #0e0e0e;
+  line-height: 35rpx;
+}
+.article image{
+  display: block;
+  width: 100%;
+  margin: 25rpx 0;
+}
+
+.dianlike{
+  width: 750rpx;
+  height: 280rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.dianlike .clickzan{
+  width: 270rpx;
+  height: 80rpx;
+  background: #0cc8a5;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.dianlike .clickzan .ico{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 20rpx 25rpx 0 70rpx;
+}
+.dianlike .clickzan .ico image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+/***相似推荐***/
+.detailrecom{
+  background: #fff;
+}
+.detailrecom .rtitw{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #575757;
+  font-weight: bold;
+}
+.detailrecom .rtitw .xian{
+  width: 10rpx;
+  height: 40rpx;
+  border-radius: 5rpx;
+  background: #0cc8a5;
+  overflow: hidden;
+  margin: 25rpx 20rpx;
+}
+.major .item{
+  height: 225rpx;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.major .item .figure{
+  width: 165rpx;
+  height: 165rpx;
+  margin: 25rpx 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.major .item .figure image{
+  display: block;
+  width: 165rpx;
+  height: 165rpx;
+}
+.major .item .dl{
+  width: 480rpx;
+  height: 175rpx;
+  margin-top: 20rpx;
+}
+.major .item .dl .name{
+  font-size: 25rpx;
+  color: #232323;
+  line-height: 30rpx;
+}
+.major .item .dl .workyear{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+  color: #1e1e1e;
+}
+.major .item .dl .workyear text{
+  color: #8f8f8f;
+}
+.major .item .dl .spoint{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+  color: #1e1e1e;
+}
+.major .item .dl .spoint text{
+  color: #8f8f8f;
+}
+.major .item .dl .hits{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+  color: #8f8f8f;
+}
+.major .item .dl .hits text{
+  color: #ff5c00;
+}
+
+/**回到顶部**/
+.fixedRight{
+  width: 90rpx;
+  height: 210rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 40rpx;
+  z-index: 500;
+}
+.fixedRight .circular{
+  width: 95rppx;
+  height: 95rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fixedRight .circular image{
+  width: 95rpx;
+  height: 95rpx;
+  display: block;
+}
+
+.fixfooter{
+  width: 720rpx;
+  height: 75rpx;
+  margin: 30rpx auto;
+  border-radius: 35rpx;
+  overflow: hidden;
+}
+.fixfooter .item{
+  width: 360rpx;
+  height: 75rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 75rpx;
+}
+.fixfooter .item .ico{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 20rpx 20rpx 0 70rpx;
+}
+.fixfooter .item .ico image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.fixfooter .item:nth-of-type(1){
+  background: #26c8e7;
+}
+.fixfooter .item:nth-of-type(2){
+  background: #12c0ad;
+}

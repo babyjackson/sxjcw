@@ -1,0 +1,221 @@
+/* pages/component/brand/bshop/bshop.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+page{
+  background: #f5f5f5;
+}
+.h-15{
+  height: 15rpx;
+}
+/***搜索***/
+.searchw{
+  width: 750rpx;
+  height: 65rpx;
+  background: #ffffff;
+  padding: 25rpx 0;
+}
+.searchw .search{
+  width: 690rpx;
+  height: 65rpx;
+  background: #f5f5f5;
+  margin: 0rpx auto;
+}
+.searchw .search .ico{
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.searchw .search input{
+  width: 600rpx;
+  height: 65rpx;
+  display: block;
+  border: 0;
+  outline: 0;
+  background: rgba(0, 0, 0, 0);
+  font-size: 24rpx;
+}
+/***店铺**/
+.brandt{
+  width: 750rpx;
+  height: 245rpx;
+  position: relative;
+}
+.brandt .bgimg{
+  display: block;
+  width: 750rpx;
+  height: 245rpx;
+}
+.brandt .bgimg image{
+  display: block;
+  width: 750rpx;
+  height: 245rpx;
+}
+.brandt .bgimgmask{
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 750rpx;
+  height: 245rpx;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.brandt .brandinfo{
+  width: 710rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 50rpx;
+  left: 20rpx;
+  z-index: 8;
+}
+.brandt .brandinfo .logo{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.brandt .brandinfo .logo image{
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+}
+.brandt .brandinfo .dl{
+  margin-left: 15rpx;
+  max-width: 380rpx;
+}
+.brandt .brandinfo .dl .dd{
+  height: 70rpx;
+  overflow: hidden;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+.brandt .brandinfo .dl .dd .ico{
+  width: 35rpx;
+  height: 25rpx;
+  display: block;
+  margin-top: 25rpx;
+  margin-left: 15rpx;
+}
+.brandt .brandinfo .dl .dd .ico image{
+  display: block;
+  width: 35rpx;
+  height: 25rpx;
+}
+.brandt .brandinfo .dl .dt{
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 25rpx;
+}
+.brandt .brandinfo .scdp{
+  width: 160rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  background: #0cc8a5;
+  text-align: center;
+  line-height: 50rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #ffffff;
+  margin-top: 35rpx;
+}
+.storetag{
+  width: 750rpx;
+  height: 50rpx;
+  background: #ffffff;
+  padding: 40rpx 20rpx;
+}
+.storetag .item{
+  display: block;
+  width: 110rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 16rpx;
+  color: #979797;
+  border: 2rpx solid #979797;
+  border-radius: 3rpx;
+  margin-left: 10rpx;
+}
+/***商品****/
+.navgw{
+  height: 90rpx;
+  width: 750rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.navgw .item{
+  display: block;
+  float: left;
+  height: 85rpx;
+  border-bottom: 5rpx solid #fff;
+  line-height: 85rpx;
+  font-size: 24rpx;
+  margin: 0 75rpx;
+  color: #565656;
+}
+.navgw .item.active{
+  color: #282828;
+  font-weight: bold;
+  border-bottom: 5rpx solid #0cc8a5;
+}
+.item-con{
+  display: none;
+}
+.item-con.on{
+  display: block;
+}
+.recommon{
+  width: 750rpx;
+}
+.recommon .item{
+  width: 375rpx;
+  height: 645rpx;
+  background: #fff;
+}
+.recommon .item .figure{
+  width: 345rpx;
+  height: 380rpx;
+  padding: 15rpx 0;
+  margin: 0rpx auto;
+  overflow: hidden;
+}
+.recommon .item .figure image{
+  display: block;
+  width: 345rpx;
+  height: 380rpx;
+}
+.recommon .item .tit{
+  width: 345rpx;
+  height: 65rpx;
+  font-size: 25rpx;
+  line-height: 30rpx;
+  color: #202020;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.recommon .item .price{
+  width: 220rpx;
+  height: 65rpx;
+  border-top: 2rpx dashed #c9c9c9;
+  text-align: center;
+  line-height: 65rpx;
+  font-size: 30rpx;
+  color: #050505;
+  overflow: hidden;
+  margin: 0 auto;
+}

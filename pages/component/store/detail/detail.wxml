@@ -1,0 +1,207 @@
+<!--pages/component/store/detail/detail.wxml-->
+<!--banner图-->
+<view class="bannerw">
+  <view class="ban">
+    <swiper class="bans" current="0" bindchange="EventHandle" data-length="{{ibanner.length}}">
+      <block wx:for="{{ibanner}}" wx:key="id" wx:for-index="{{index}}">
+        <swiper-item>
+          <navigator class="img" url="{{item.url}}" data->
+            <image src="{{item.img}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--分页-->
+  <view class="pageban">
+    {{current}}/{{length}}
+  </view>
+</view>
+<view class="nature">
+  <view class="h-35"></view>
+  <view class="naprice">
+    <view class="price fl clearfix">
+      <text class="xpri">¥59</text>
+      <text class="ypri">¥120</text>
+    </view>
+    <view class="attent fr" wx:if="{{true}}">
+      <view class="figure">
+        <image src="/images/attented.png"></image>
+      </view>
+      <view class="text">已关注</view>
+    </view>
+    <view class="attent fr" wx:else>
+      <view class="figure">
+        <image src="/images/attent.png"></image>
+      </view>
+      <view class="text">关注</view>
+    </view>
+  </view>
+  <!--name-->
+  <view class="goodsname">
+    MOPO摩普MP530淋浴花洒套装冷热淋雨屏喷头全铜龙头套装 
+  </view>
+  <view class="h-10"></view>
+  <!--承诺-->
+  <view class="promise clearfix">
+    <view class="item fl cleafix">
+      <view class="ico fl"><image src="/images/promiseico.png"></image></view>
+      质量保证
+    </view>
+    <view class="item fl cleafix">
+      <view class="ico fl"><image src="/images/promiseico.png"></image></view>
+     三年保修
+    </view>
+    <view class="item fl cleafix">
+      <view class="ico fl"><image src="/images/promiseico.png"></image></view>
+     火爆热款
+    </view>
+    <view class="item fl cleafix">
+      <view class="ico fl"><image src="/images/promiseico.png"></image></view>
+      物美价廉
+    </view>
+  </view>
+  <!--数量-->
+  <view class="amount cleafix">
+    <view class="fl lab">数量</view>
+    <view class="changenum fr">
+      <view class="minus fl" bindtap="minusNum">-</view>
+      <view class="numw fl"><input class="num fl" value="{{num}}" bindblur="numHandle" bindinput="keyboard" focus="{{focus}}"/></view>
+      <view class="plus fl" bindtap="plusNum">+</view>
+    </view>
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--评价-->
+<view class="evaluatew">
+  <view class="etit">
+    <view class="tit fl">评价</view>
+    <navigator class="allevalu fr">查看全部</navigator>
+  </view>
+  <view class="evalute">
+    <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+      <view class="item" wx:for="{{evalute}}" wx:key="id">
+        <view class="etop clearfix">
+          <view class="h-20"></view>
+          <view class="usertx fl">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="tel fl">{{item.tel}}</view>
+        </view>
+        <view class="text">{{item.text}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--店铺-->
+<view class="storew">
+  <view class="h-30"></view>
+  <view class="store clearfix">
+    <view class="figure fl">
+      <image src="/images/allimg.png"></image>
+    </view>
+    <view class="dl fl">
+      <view class="tit">高斯高斯</view>
+      <view class="tips">活出经典 活出彩</view>
+    </view>
+    <view class="scbtn fr">收藏</view>
+  </view>
+  <view class="h-30"></view>
+  <navigator class="enterdp">
+    <view class="enter">
+      <view class="ico fl"><image src="/images/enterdpico.png"></image></view>
+      进入店铺
+    </view>
+  </navigator>
+</view>
+<view class="hb-30"></view>
+<!--相关推荐-->
+<view class="recommendw">
+  <view class="rtit">类似推荐</view>
+  <view class="recommend">
+    <swiper class="ban" circular="true" indicator-dots="true" indicator-color="#b3b3b3" indicator-active-color='#000000'>
+      <block wx:for="{{recommend}}" wx:key="id">
+        <swiper-item>
+          <view class="recom clearfix">
+            <navigator class="item fl" wx:for="{{item.list}}" wx:key="id" wx:for-item="list" url="{{list.url}}">
+              <view class="figure">
+                <image src="{{list.img}}"></image>
+              </view>
+              <view class="tit">{{list.tit}}</view>
+              <view class="price">
+                <text class="xpri">¥{{list.xpri}}</text>
+                <text class="ypri">¥{{list.ypri}}</text>
+              </view>
+            </navigator>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--商品参数-->
+<view class="paramw">
+  <view class="ptit">商品参数</view>
+  <view class="param">
+    <view class="section clearfix">
+      <view class="lab fl">产地</view>
+      <view class="value fl">中国</view>
+    </view>
+    <view class="section clearfix">
+      <view class="lab fl">产品分类</view>
+      <view class="value fl">卫浴大全</view>
+    </view>
+    <view class="section clearfix">
+      <view class="lab fl">适用人群</view>
+      <view class="value fl">所有人</view>
+    </view>
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--图文详情-->
+<view class="imagetextw">
+  <view class="ptit">图文详情</view>
+  <view class="imagetext">
+    <view class="img" wx:for="{{imagetext}}" wx:key="id">
+      <image src="{{item.img}}" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+<!--回到顶部-->
+<view class="fixedRight">
+  <view class="scroll_top circular" bindtap="goTop">
+    <image src="/images/backtop.png"></image>
+  </view>
+</view>
+<view class="h-135"></view>
+<!--底部-->
+<view class="fixedfoot">
+  <view class="h-30"></view>
+  <view class="foot clearfix">
+    <button class="section fl">
+      <view class="sf">
+        <view class="img"><image src="/images/dfootdpico.png"></image></view>
+        <view class="text">店铺</view>
+      </view>
+    </button>
+    <button class="section fl">
+      <view class="sf">
+        <view class="img"><image src="/images/dfootscico.png"></image></view>
+        <view class="text">收藏</view>
+      </view>
+    </button>
+    <button class="section fl">
+      <view class="sf">
+        <view class="img"><image src="/images/dfoottelico.png"></image></view>
+        <view class="text">客服</view>
+      </view>
+    </button>
+    <view class="fl btnwr clearfix">
+      <navigator class="jrgwc fl">加入购物车</navigator>
+      <navigator class="ljgm fl">立即购买</navigator>
+    </view>
+  </view>
+  <view class="h-20"></view>
+</view>

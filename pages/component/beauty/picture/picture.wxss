@@ -1,0 +1,97 @@
+/* pages/component/beauty/picture/picture.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  height: 0;
+  clear: both;
+  display: block;
+  content: ".";
+  visibility: hidden;
+}
+page{
+  background: #f7f7f7;
+}
+.picban{
+  width: 750rpx;
+  height: 340rpx;
+  display: block;
+}
+.picban image{
+  display: block;
+  width:750rpx;
+  height:340rpx;
+}
+.btitw{
+  width: 750rpx;
+  height: 95rpx;
+  background: #0cc8a5;
+}
+.btitw .btit{
+  width: 220rpx;
+  height: 95rpx;
+  margin: 0 auto;
+  font-size: 26rpx;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 95rpx;
+  text-align: center;
+}
+.btitw .btit .xian{
+  width: 30rpx;
+  height: 6rpx;
+  background: #ffab00;
+  margin-top: 45rpx;
+}
+/**pic**/
+.picw{
+ padding: 0 20rpx;
+}
+.picw .item{
+  width: 710rpx;
+  height: 550rpx;
+  background: #fff;
+  margin: 20rpx auto 0;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.picw .item .figure{
+  height: 390rpx;
+  width: 710rpx;
+  display: block;
+}
+.picw .item .figure image{
+  display: block;
+  width: 710rpx;
+  height: 390rpx;
+}
+.picw .item .tit{
+  height: 85rpx;
+  line-height: 85rpx;
+  width: 710rpx;
+  font-size: 28rpx;
+  color: #565656;
+  text-indent: 30rpx;
+}
+.picw .item .dd{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  color: #a8a8a8;
+  padding: 0 25rpx;
+}
+.loadmore{
+  width: 235rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #eeeeee;
+  margin: 35rpx auto;
+  border-radius: 35rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color: #353235;
+}

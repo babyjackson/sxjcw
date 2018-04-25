@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "图库详情",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "black"
+}
