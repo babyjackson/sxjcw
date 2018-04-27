@@ -1,0 +1,41 @@
+<!--pages/component/gq/qg/qg.wxml-->
+<!--导航-->
+<view class="tabnavw">
+  <view class="tabnav cleafix">
+    <button class="na fl" data-id="0" bindtap="navturn">供应</button>
+    <view class="na cur fr" data-id="1">求购</view>
+  </view>
+</view>
+<view class="gqconw">
+  <view class="con-item {{tabArr.curBdIndex=='0' ? 'on':''}}">
+    <view class="cw">
+      <view class="gq" wx:for="{{gyli}}" wx:key="id">
+        <view class="vleft clearfix" style="{{item.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+          <view class="figure fl">
+            <image src="{{item.imgsrc}}"></image>
+          </view>
+          <view class="fl dl">
+            <view class="tit"><view class="tips">供应</view>{{item.tit}}</view>
+            <view class="h30"></view>
+            <view class="dd">价格  电议</view>
+            <view class="dd"><text class="fl">联系人：张先生</text><text class="fr">3小时前</text></view>
+          </view>
+        </view>
+        <view class="btn clearfix">
+          <view class="editor fl"><navigator url="{{item.editorurl}}">编辑</navigator></view>
+          <view class="del fl"><button bindtap="delItem">删除</button></view>
+        </view>
+      </view>
+    </view>
+    <view class="yjdd clearfix">
+      <view-xian class="fl"></view-xian>
+        已经到底了
+      <view-xian class="fr"></view-xian>
+    </view>
+  </view>
+</view>
+<!--发布-->
+<view class="h100"></view>
+<view class="newfb">
+  <button bindtap='navFun' class="btn">+发布</button>
+</view>

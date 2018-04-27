@@ -26,7 +26,7 @@
 </view>
 <view class="h-20"></view>
 <view class="supply con-item {{tabArr.cur == 0 ? 'on':''}}">
-  <view class="item" wx:for="{{supply}}" wx:key="id">
+  <navigator class="item" wx:for="{{supply}}" wx:key="id" url="{{item.url}}">
     <view class="ite clearfix">
       <view class="figure fl">
         <image src="{{item.img}}"></image>
@@ -43,12 +43,12 @@
         </view>
       </view>
     </view>
-  </view>
+  </navigator>
   <!--点击加载更多-->
   <view class="loadmore">加载更多</view>
 </view>
 <view class="demand con-item {{tabArr.cur == 1 ? 'on':''}}">
-  <view class="item" wx:for="{{demand}}" wx:key="id">
+  <navigator class="item" wx:for="{{demand}}" wx:key="id" url="{{item.url}}">
     <view class="ite">
       <view class="dd clearfix">
         <view class="fl caps">{{item.tag}}</view>
@@ -62,7 +62,7 @@
         <text>联系人：{{item.linkman}}</text>
       </view>
     </view>
-  </view>
+  </navigator>
   <!--点击加载更多-->
   <view class="loadmore">加载更多</view>
 </view>

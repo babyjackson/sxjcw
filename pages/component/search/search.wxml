@@ -1,0 +1,31 @@
+<!--pages/component/search/search.wxml-->
+<!--搜索-->
+<form>
+  <view class="searchw clearfix">
+    <view class="search fl">
+      <view class="ico fl"><icon type="search" size="25" color="#b1b1b3"/></view>
+      <input type="text" name="search"/>
+    </view>
+    <navigator class="searchbtn fl" url="/pages/component/searchlist/searchlist">搜索</navigator>
+  </view>
+  <!--历史搜索-->
+  <view class="pastsearch">
+    <view class="ptopw clearfix">
+      <view class="tit fl">历史搜索</view>
+      <view class="clear fr">清除</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" wx:for="{{pastsearch}}">{{item.value}}</view>
+    </view>
+  </view>
+  <!--热门搜索-->
+  <view class="hotsearch">
+    <view class="ptopw clearfix">
+      <view class="tit fl">热门搜索</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" wx:for="{{pastsearch}}">{{item.value}}</view>
+    </view>
+  </view>
+</form>
+

@@ -5,32 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cnxh: [
+    like: [
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        price: "23.50",
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        price: "23.50",
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        price: "23.50",
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        price: "23.50",
       }
-    ]
+    ],
   },
 
   /**

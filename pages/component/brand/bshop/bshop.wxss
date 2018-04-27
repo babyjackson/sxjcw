@@ -12,7 +12,9 @@
   visibility: hidden;
   height: 0;
 }
-
+.h-90{
+  height: 90rpx;
+}
 page{
   background: #f5f5f5;
 }
@@ -218,4 +220,59 @@ page{
   color: #050505;
   overflow: hidden;
   margin: 0 auto;
+}
+/****底部****/
+.dpxqfooter{
+  width:750rpx;
+  height:60rpx;
+  padding:20rpx 0rpx;
+  background:#ffffff;
+  position:fixed;
+  bottom:0;
+  border-top: 2rpx solid #cecbcc;
+}
+.dpxqfooter .flex{
+  display: flex;
+  position: relative;
+}
+.dpxqfooter .flex view{
+  width: 50%;
+  padding: 0 105rpx;
+}
+.dpxqfooter .flex view image{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  margin-right: 10rpx;
+}
+.dpxqfooter .flex view button{
+  width: 100%;
+  border: 0;
+  background:rgba(0, 0, 0, 0);
+  height: 50rpx;
+  outline: 0;
+  border-radius: 0;
+  padding: 0;
+  line-height: 50rpx;
+}
+.dpxqfooter .flex view navigator{
+  width: 100%;
+  border: 0;
+  background:rgba(0, 0, 0, 0);
+  height: 50rpx;
+  outline: 0;
+  border-radius: 0;
+  padding: 0;
+  line-height: 50rpx;
+}
+.dpxqfooter .flex view text{
+  font-size: 24rpx;
+  color: #4b4f4b;
+}
+.dpxqfooter .flex view-xian{
+  position: absolute;
+  width: 3rpx;
+  height: 50rpx;
+  left: 50%;
+  background: #848684;
 }

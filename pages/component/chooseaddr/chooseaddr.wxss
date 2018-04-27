@@ -38,14 +38,14 @@ page{
 .noshdz .tjxdz{
   width: 675rpx;
   height: 90rpx;
-  color: #fff;
-  background: #23242a;
+  color: #1f1e1f;
+  background: #fff;
   border-radius: 10rpx;
-  border:1rpx solid #e5e5e5;
+  border:1rpx solid #f0ebf0;
   display: block;
   margin: 0 auto;
   font-size: 28rpx;
-  box-shadow: 2rpx 2rpx 2rpx #e5e5e5;
+  box-shadow: 2rpx 2rpx 2rpx #f0ebf0;
 }
 .h40{
   height:40rpx;

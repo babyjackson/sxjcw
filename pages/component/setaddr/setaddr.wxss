@@ -12,9 +12,15 @@
   visibility: hidden;
   clear:both;
 }
+page{
+  background: #f7f7f7;
+}
 .h-20{
   height: 20rpx;
   background: #eeeeee;
+}
+.h-40{
+  height: 40rpx;
 }
 .h-25{
   height: 25rpx;
@@ -129,4 +135,38 @@
   display: block;
   width: 40rpx;
   height: 40rpx;
+}
+
+/**没有地址**/
+.noshdz{
+  width: 100%;
+}
+.noshdz .img{
+  width: 420rpx;
+  height: 260rpx;
+  margin:0rpx auto;
+}
+.h105{
+  height:105rpx;
+}
+.noshdz .img image{
+  width: 420rpx;
+  height: 260rpx;
+}
+.noshdz .mtit{
+  text-align: center;
+  font-size: 28rpx;
+  color: #969495;
+}
+.noshdz .tjxdz{
+  width: 675rpx;
+  height: 90rpx;
+  color: #1f1e1f;
+  background: #fff;
+  border-radius: 10rpx;
+  border:1rpx solid #e5e5e5;
+  display: block;
+  margin: 0 auto;
+  font-size: 28rpx;
+  box-shadow: 2rpx 2rpx 2rpx #e5e5e5;
 }

@@ -1,0 +1,105 @@
+/* pages/component/search/search.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear: both;
+  height: 0;
+  display: block;
+  content: ".";
+  visibility: hidden;
+}
+page{
+  background: #ffffff;
+}
+.searchw{
+  width: 695rpx;
+  height: 70rpx;
+  margin: 0 auto;
+  border: 1rpx solid #e5e5e5;
+  border-radius: 5rpx;
+  overflow: hidden;
+}
+.search{
+  width: 565rpx;
+  height: 70rpx;
+  background: #eeeeee;
+  overflow: hidden;
+}
+.search .ico{
+  margin: 10rpx 20rpx;
+}
+.search input{
+  width: 475rpx;
+  height: 70rpx;
+  border: 0;
+  outline: 0;
+  font-size: 24rpx;
+  color: #b1b1b3;
+}
+.searchbtn{
+  width: 130rpx;
+  height: 70rpx;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #4b4b4b;
+}
+button::after{
+  border: 0;
+  outline: 0;
+}
+
+/***历史搜索***/
+.pastsearch{
+  padding: 0 30rpx;
+}
+.pastsearch .ptopw{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  color: #858585;
+}
+.pastsearch .record{
+  width: 590rpx;
+}
+.pastsearch .record .item{
+  height: 60rpx;
+  padding: 0 15rpx;
+  font-size: 24rpx;
+  color: #2b2a2b;
+  background: #f7f7f7;
+  line-height: 60rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+/***热门搜索***/
+.hotsearch{
+  padding: 0 30rpx;
+}
+.hotsearch .ptopw{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  color: #858585;
+}
+.hotsearch .record{
+  width: 590rpx;
+}
+.hotsearch .record .item{
+  height: 60rpx;
+  padding: 0 15rpx;
+  font-size: 24rpx;
+  color: #2b2a2b;
+  background: #f7f7f7;
+  line-height: 60rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}

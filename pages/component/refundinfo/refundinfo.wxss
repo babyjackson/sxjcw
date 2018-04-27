@@ -28,7 +28,7 @@ page{
 }
 .tkstatus .status{
   font-size: 30rpx;
-  color: #ffca12;
+  color: #0cc8a5;
   line-height: 30rpx;
 }
 .tkstatus .time{
@@ -111,7 +111,7 @@ page{
 }
 
 .footbtn{
-  border-top: 2rpx solid #ffca12;
+  border-top: 2rpx solid #0cc8a5;
   height:95rpx;
   width: 750rpx;
   position: fixed;
@@ -133,7 +133,7 @@ page{
   text-align: left;
 }
 .footbtn .item:nth-of-type(1){
-  border-right: 2rpx solid #ffca12;
+  border-right: 2rpx solid #0cc8a5;
 }
 button{
   padding: 0;

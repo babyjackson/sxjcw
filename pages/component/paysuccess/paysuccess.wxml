@@ -35,18 +35,14 @@
 <!--猜你喜欢-->
 <view class="cnxh clearfix">
   <view class="cnxhtit">猜你喜欢</view>
-  <view class="wander">
-    <navigator class="item clearfix" wx:for="{{wander}}" wx:key="id" url="{{item.url}}">
-      <view class="figure fl">
+  <view class="like clearfix">
+    <navigator class="item" wx:for="{{like}}" wx:key="id" url="{{item.url}}">
+      <view class="figure">
         <image src="{{item.img}}"></image>
       </view>
       <view class="dl fl">
         <view class="tit">{{item.tit}}</view>
-        <view class="h-20"></view>
-        <view class="price">
-          <view class="xpri">¥{{item.xpri}}</view>
-          <view class="ypri">原价：¥{{item.ypri}}</view>
-        </view>
+        <view class="price">¥{{item.price}}</view>
       </view>
     </navigator>
   </view>

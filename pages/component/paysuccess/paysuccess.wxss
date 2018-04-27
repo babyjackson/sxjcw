@@ -13,25 +13,26 @@
   visibility: hidden;
 }
 page{
-  background: #fff;
+  background: #eeeeee;
 }
 .h120{
   height: 120rpx;
 }
 .cnxh{
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 .cnxhtit{
   font-size: 30rpx;
   color: #1f1f1f;
   padding: 40rpx 0 25rpx 0;
   text-align: center;
-   background-color: #efefef;
+   background-color: #eeeeee;
 }
 .topgou{
   height: 380rpx;
   width: 100%;
   border-bottom: 2rpx solid #eeeeee;
+  background: #fff;
 }
 .gouw{
   width: 220rpx;
@@ -70,11 +71,13 @@ page{
   line-height: 60rpx;
   font-size: 30rpx;
   color: #262626;
+  background: #fff;
 }
 .aqtx{
   font-size: 25rpx;
   color: #8b898c;
   padding: 30rpx 30rpx 50rpx 30rpx;
+  background: #fff;
 }
 .aqtx .tit{
   margin-bottom:15rpx;
@@ -85,18 +88,21 @@ page{
 }
 .h2{
    background: #efefef;
-  height: 2rpx;
+    height: 2rpx;
 }
 .ddxq{
   padding: 20rpx 30rpx;
   color: #656565;
   font-size: 25rpx;
+  background: #fff;
 }
 .ddxq .tit{
   color: #292929;
+  background: #fff;
 }
 .goodscon{
   padding: 30rpx 20rpx;
+  background: #fff;
 }
 .goodscon .img{
   width: 120rpx;
@@ -128,58 +134,42 @@ page{
   margin-top:10rpx;
 }
 /***猜你喜欢***/
-.wander{
-  padding: 0 15rpx;
+.like{
+  padding: 0 20rpx;
+}
+.like .item{
+  width: 340rpx;
+  height: 415rpx;
   background: #fff;
-}
-.wander .item{
-  width: 720rpx;
-  height: 250rpx;
+  border-radius: 15rpx;
   overflow: hidden;
-  margin-top: 45rpx;
+  margin-bottom: 40rpx;
 }
-.wander .item .figure{
-  width: 250rpx;
+.like .item:nth-of-type(odd){
+  float: left;
+}
+.like .item:nth-of-type(even){
+  float: right;
+}
+.like .item .figure{
+  padding: 35rpx 35rpx;
+}
+.like .item .figure image{
+  width: 270rpx;
   height: 250rpx;
-  display: block;
+}
+.like .item .tit{
+  height: 35rpx;
   overflow: hidden;
-  background: #f7f7f7;
-  border:1rpx solid #f7f7f7;
-}
-.wander .item .figure image{
-  display: block;
-  width: 250rpx;
-  height: 250rpx;
-}
-.wander .item .dl{
-  width: 380rpx;
-  height: 250rpx;
-  margin-left: 35rpx;
-}
-.wander .item .dl .tit{
-  width: 380rpx;
-  margin: 35rpx 0;
-  max-height: 60rpx;
+  margin: 0 10rpx;
   font-size: 24rpx;
-  line-height: 30rpx;
-  overflow: hidden;
-  color: #222222;
+  color: #383838;
+  line-height: 35rpx;
+  text-align: center;
 }
-.wander .item .dl .price{
-  height: 90rpx;
-  overflow: hidden;
-}
-.wander .item .dl .price .xpri{
-  font-size: 30rpx;
-  color: #000000;
-  line-height: 50rpx;
-  height: 50rpx;
-  overflow: hidden;
-}
-.wander .item .dl .price .ypri{
-  font-size: 24rpx;
-  color: #a9a9a9;
-  line-height: 40rpx;
-  height: 40rpx;
-  overflow: hidden;
+.like .item .price{
+  font-size: 26rpx;
+  color: #0cc8a5;
+  line-height: 35rpx;
+  text-align: center;
 }

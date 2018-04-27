@@ -1,0 +1,70 @@
+/* pages/component/investment/investment.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear: both;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  content: ".";
+}
+page{
+  background: #fff;
+}
+.section{
+  width: 710rpx;
+  margin: 0 auto;
+  height: 95rpx;
+  border-bottom: 2rpx solid #e2e2e2;
+  line-height: 90rpx;
+}
+.section .xin{
+  width: 15rpx;
+  height: 15rpx;
+  margin-top: 35rpx;
+}
+.section .xin image{
+  display: block;
+  width: 15rpx;
+  height: 15rpx;
+}
+.section view{
+  font-size: 29rpx;
+  color: #181818;
+  line-height: 90rpx;
+}
+.section input{
+  height: 95rpx;
+  line-height: 95rpx;
+  width: 500rpx;
+  margin-left: 35rpx;
+  font-size: 28rpx;
+  color: #959595;
+}
+
+.apply{
+  width: 710rpx;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  left: 20rpx;
+  background: #0cc8a5;
+  font-size: 32rpx;
+  color: #ffffff;
+  padding: 0;
+}
+.apply button{
+  width: 710rpx;
+  height: 90rpx;
+  background: #0cc8a5;
+  font-size: 32rpx;
+  color: #ffffff;
+  padding: 0;
+}
+button::after{
+  border: 0;
+}

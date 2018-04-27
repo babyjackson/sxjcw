@@ -54,7 +54,7 @@ Page({
         tit: "资讯中心"
       },
       {
-        url: "",
+        url: "/pages/component/investment/investment",
         ico: "/images/inav7.png",
         tit: "招商入驻"
       },

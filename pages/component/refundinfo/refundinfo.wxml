@@ -18,7 +18,7 @@
   <view class="tit">退款信息</view>
   <view class="goods clearfix">
     <view class="figure fl">
-      <image src="/img/allimg.jpg"></image>
+      <image src="/images/allimg.png"></image>
     </view>
     <view class="dl fl">
       <view class="tits">智能运动手环心率心跳血压监测防水多功能跑步记计步女健康手表男</view>
@@ -36,13 +36,13 @@
 <view class="footbtn clearfix">
   <button class="item fl">
     <view class="img fl">
-      <image src="/img/tklxmjico.png"></image>
+      <image src="/images/tklxmjico.png"></image>
     </view>
     联系卖家
   </button>
   <button class="item fl">
     <view class="img fl">
-      <image src="/img/tkbddhico.png"></image>
+      <image src="/images/tkbddhico.png"></image>
     </view>
     拨打电话
   </button>

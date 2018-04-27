@@ -26,14 +26,14 @@
   </view>
   <!--搜索-->
   <view class="searchW">
-    <view class="search clearfix">
+    <navigator class="search clearfix" url="/pages/component/search/search">
       <view class="ico fl">
         <icon type="search" size="20" color="#bcbcbc"></icon>
       </view>
       <view class="inp fl">
-        <input type="text" placeholder="请输入你想要搜索的关键词"></input>
+        <input type="text" placeholder="请输入你想要搜索的关键词" disabled='true'></input>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>
 <!--广告图-->

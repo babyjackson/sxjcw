@@ -1,0 +1,201 @@
+/* pages/component/gq/gy/gy.wxss */
+page{
+  background: #f4f4f4;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.tabnavw{
+  width: 750rpx;
+  height: 95rpx;
+  background: #ffffff;
+}
+.tabnav{
+  width: 400rpx;
+  height: 95rpx;
+  margin: 0 auto;
+}
+.tabnav .na{
+  width: 110rpx;
+  overflow: hidden;
+  line-height: 90rpx;
+  font-size: 26rpx;
+  color: #23242a;
+  height: 90rpx;
+  text-align: center;
+  background: #fff;
+  border-bottom: 5rpx solid #fff;
+}
+.tabnav .cur{
+  border-bottom: 5rpx solid #0cc8a5;
+  color: #0cc8a5;
+}
+.gqconw .con-item {
+  display: none;
+}
+.gqconw .on{
+  display: block;
+}
+.gqconw{
+  background: #f4f4f4;
+}
+.gqconw .gq{
+  width: 715rpx;
+  margin: 20rpx auto 0;
+  overflow: hidden;
+  position: relative;
+  height: 280rpx;
+  background: #fff;
+}
+.gqconw .vleft{
+  width: 715rpx;
+  height: 280rpx;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.gqconw .vleft .figure{
+  width: 220rpx;
+  height: 220rpx;
+  margin: 30rpx;
+  overflow: hidden;
+}
+.gqconw .vleft .figure image{
+  width: 220rpx;
+  height: 220rpx;
+  display: block;
+}
+.gqconw .vleft .dl{
+  width: 400rpx;
+  height: 220rpx;
+  margin: 30rpx 0;
+}
+.gqconw .vleft .dl .tips{
+  width: 65rpx;
+  height: 35rpx;
+  border-radius: 5rpx;
+  background: #0cc8a5;
+  text-align: center;
+  line-height: 35rpx;
+  font-size: 22rpx;
+  color: #ffffff;
+  float: left;
+  margin-top: 8rpx;
+  margin-right: 10rpx;
+}
+.gqconw .vleft .dl .tit{
+  font-size: 28rpx;
+  color: #292727;
+  line-height: 45rpx;
+  height: 90rpx;
+  overflow: hidden;
+}
+.gqconw .vleft .dl .dd{
+  font-size: 25rpx;
+  color: #292727;
+  line-height: 35rpx;
+  height: 35rpx;
+}
+.h30{
+  height: 30rpx;
+}
+.gqconw .btn{
+  width: 300rpx;
+  height: 280rpx;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+.gqconw .btn .editor{
+  width: 150rpx;
+  height: 280rpx;
+  background: #d2d2d2;
+  text-align: center;
+  line-height: 280rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+.gqconw .btn .editor navigator{
+  width: 150rpx;
+  height: 280rpx;
+}
+.gqconw .btn .del{
+  width: 150rpx;
+  height: 280rpx;
+  background: #23242a;
+  text-align: center;
+  line-height: 280rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+.gqconw .btn .del button{
+  width: 150rpx;
+  font-size: 28rpx;
+  height: 280rpx;
+  background: #0cc8a5;
+  padding: 0;
+  text-align: center;
+  line-height: 280rpx;
+  border-radius: 0;
+  color: #fff;
+}
+button::after{
+  border: 0;
+  outline: 0;
+}
+.yjdd{
+  width: 710rpx;
+  margin: 50rpx auto;
+  height: 35rpx;
+  line-height: 35rpx;
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 28rpx;
+}
+.yjdd view-xian{
+  display: block;
+  width: 260rpx;
+  height: 2rpx;
+  background: #e6e6e6;
+  margin-top: 12rpx;
+}
+.h100{
+  height: 100rpx;
+}
+.newfb{
+  width: 715rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 10rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+.newfb .btn{
+   width: 715rpx;
+   height: 100rpx;
+   display: block;
+   margin: 0;
+   padding: 0;
+   line-height: 100rpx;
+   border-radius: 10rpx;
+   text-align: center;
+   background: #0cc8a5;
+   color: #ffffff;
+   font-size: 32rpx;
+}
+button::after{
+  outline: 0;
+  border: 0;
+}

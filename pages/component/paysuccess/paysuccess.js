@@ -6,34 +6,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-    wander: [
+    like: [
       {
         img: "/images/allimg.png",
         url: "",
         tit: "今之逸品抽取式美容，美容",
-        xpri: "23.50",
-        ypri: "25.00"
+        price: "23.50",
       },
       {
         img: "/images/allimg.png",
         url: "",
         tit: "今之逸品抽取式美容，美容",
-        xpri: "23.50",
-        ypri: "25.00"
+        price: "23.50",
       },
       {
         img: "/images/allimg.png",
         url: "",
         tit: "今之逸品抽取式美容，美容",
-        xpri: "23.50",
-        ypri: "25.00"
+        price: "23.50",
       },
       {
         img: "/images/allimg.png",
         url: "",
         tit: "今之逸品抽取式美容，美容",
-        xpri: "23.50",
-        ypri: "25.00"
+        price: "23.50",
       }
     ],
     goodscon: [

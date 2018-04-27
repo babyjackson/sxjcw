@@ -23,7 +23,7 @@ Page({
     supply:[
       {
         img:"/images/allimg.png",
-        url:"",
+        url:"/pages/component/demand/sdetail/sdetail",
         tag:"供应",
         tit: "油烟机批发经销火王厨电加盟火王油烟机T型油烟机 D12",
         linkman:"刘先生",
@@ -92,7 +92,7 @@ Page({
         tit:"采购彩钢泡沫夹芯板",
         quantity:"800平方米",
         deadline:"3天",
-        url:"",
+        url:"/pages/component/demand/cgdetail/cgdetail",
         linkman:"刘先生"
       },
       {

@@ -8,37 +8,51 @@ Page({
    */
   data: {
     tabArr:{current:0},
-    wdsc: [
+    collect: [
       {
-        goodsimg: "/img/allimg.jpg",
-        goodstit: "韩国新款个性铁环画家帽子女秋冬季潮英伦风甜美可爱贝雷帽原宿风",
+        goodsimg: "/images/allimg.png",
+        goodstit: "韩国新款个性铁环画家帽子女秋冬季潮英伦风甜美可爱贝雷帽原宿风1",
+        sj: "¥200",
+      },
+      {
+        goodsimg: "/images/allimg.png",
+        goodstit: "韩国新款个性铁环画家帽子女秋冬季潮英伦风甜美可爱贝雷帽原宿风2",
+        sj: "¥200",
+      },
+      {
+        goodsimg: "/images/allimg.png",
+        goodstit: "韩国新款个性铁环画家帽子女秋冬季潮英伦风甜美可爱贝雷帽原宿风3",
         sj: "¥200",
       }
     ],
-    cnxh: [
+    wander: [
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        xpri: "23.50",
+        ypri: "25.00"
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        xpri: "23.50",
+        ypri: "25.00"
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        xpri: "23.50",
+        ypri: "25.00"
       },
       {
-        navurl: "",
-        imgti: "/img/allimg.jpg",
-        tit: "啦哒 Carada 鱿鱼味米球（膨化食品）68g 泰国进口 ",
-        price: "¥8.80"
+        img: "/images/allimg.png",
+        url: "",
+        tit: "今之逸品抽取式美容，美容",
+        xpri: "23.50",
+        ypri: "25.00"
       }
     ]
   },
@@ -54,9 +68,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
-  },
 
+  },
+  /***删除**/
+  scdeleted:function(e){
+    let collect = this.data.collect;
+    let idx = e.currentTarget.dataset.index;
+    collect.splice(idx,1);
+    this.setData({
+      collect:collect
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

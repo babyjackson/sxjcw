@@ -45,6 +45,7 @@
       <view class="h-50"></view>
       <view class="price">¥{{item.price}}</view>
     </navigator>
+    <view class="loadmore">—— 加载更多 ——</view>
   </view>
 </view>
 <view class="item-con {{tabArr.cur == 1 ? 'on' :''}}">
@@ -52,4 +53,23 @@
 </view>
 <view class="item-con {{tabArr.cur == 2 ? 'on' :''}}">
   3
+</view>
+<!--底部-->
+<view class="h90"></view>
+<view class="dpxqfooter">
+  <view class="flex">
+    <view>
+      <button class="clearfix">
+        <image class="fl" src="/images/kefu.png"></image>
+        <text class="fl">联系客服</text>
+      </button>
+    </view>
+    <view>
+      <navigator class="clearfix" url="/pages/component/brand/shopsinfo/shopsinfo">
+        <image class="fl" src="/images/shopsinfo.png"></image>
+        <text class="fl">商铺信息</text>
+      </navigator>
+    </view>
+    <view-xian></view-xian>
+  </view>
 </view>

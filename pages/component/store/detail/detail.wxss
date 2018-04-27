@@ -33,21 +33,21 @@
 }
 .bannerw{
   width: 750rpx;
-  height: 800rpx;
+  height: 750rpx;
   position: relative;
 }
 .bans{
   width: 750rpx;
-  height: 800rpx;
+  height: 750rpx;
 }
 .bans .img{
   width: 750rpx;
-  height: 800rpx;
+  height: 750rpx;
 }
 .bans .img image{
   display: block;
   width: 750rpx;
-  height: 800rpx;
+  height: 750rpx;
 }
 .pageban{
   position: absolute;

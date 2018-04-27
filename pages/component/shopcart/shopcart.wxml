@@ -1,5 +1,5 @@
 <!--pages/component/gwc/gwc.wxml-->
-<view class="myshopcarV" wx:if="{{hasList}}">
+<view class="myshopcarV" wx:if="{{carts}}">
   <view class="storegoods" wx:for="{{carts}}" wx:key="id" wx:for-index="parentindex">
     <!--店铺-->
     <view class="store" url="{{item.storenav}}">

@@ -1,0 +1,367 @@
+/* pages/component/store/detail/detail.wxss */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.hb-30{
+  height: 30rpx;
+  background: #f3f4f6;
+}
+.h-35{
+  height: 35rpx;
+}
+.h-30{
+  height: 30rpx;
+}
+.h-10{
+  height: 10rpx;
+}
+.h-20{
+  height: 20rpx;
+}
+.h-60{
+  height: 60rpx;
+}
+.h-40{
+  height: 40rpx;
+}
+.h-135{
+  height: 135rpx;
+}
+.clearfix::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bannerw{
+  width: 750rpx;
+  height: 750rpx;
+  position: relative;
+}
+.bans{
+  width: 750rpx;
+  height: 750rpx;
+}
+.bans .img{
+  width: 750rpx;
+  height: 750rpx;
+}
+.bans .img image{
+  display: block;
+  width: 750rpx;
+  height: 750rpx;
+}
+.pageban{
+  position: absolute;
+  z-index: 500;
+  width: 110rpx;
+  height: 50rpx;
+  background: #4e4d4e;
+  border-radius: 30rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #fffefe;
+  text-align: center;
+  line-height: 50rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+}
+/**nature标题***/
+.nature{
+  padding: 0 15rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.nature .titw{
+  width: 720rpx;
+  height: 130rpx;
+}
+.nature .titw .tit{
+  width: 540rpx;
+  height: 105rpx;
+  font-size: 28rpx;
+  color: #000000;
+  line-height: 50rpx;
+  overflow: hidden;
+  margin-right: 35rpx;
+}
+.xian2{
+  height: 75rpx;
+  width: 2rpx;
+  background: #eeeeee;
+}
+.nature .titw .scw{
+  width: 140rpx;
+  height: 105rpx;
+  overflow: hidden;
+}
+.nature .titw .scw .sc .ico{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 auto;
+}
+.nature .titw .scw .sc .ico image{
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+}
+.nature .titw .scw .sc .text{
+  font-size: 24rpx;
+  color: #000000;
+  line-height: 30rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.dyprice{
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 32rpx;
+  color: #0cc8a5;
+  font-weight: bold;
+}
+
+/***联系详情***/
+.relation{
+  background: #fff;
+  padding: 0 15rpx;
+}
+.relation .tit{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  font-size: 30rpx;
+  color: #1e1e1e;
+}
+.relation .info{
+  padding: 20rpx 0;
+}
+.relation .info .linkman{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #5a5a5a;
+  margin: 20rpx 0;
+}
+.relation .info .ico{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 15rpx;
+}
+.relation .info .ico image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+}
+.relation .info .tel{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #5a5a5a;
+  margin: 20rpx 0;
+}
+/****描述*/
+.describe{
+  padding: 40rpx 15rpx;
+  background: #fff;
+}
+.describe .text{
+  text-indent: 60rpx;
+  font-size: 26rpx;
+  color: #575757;
+  line-height: 35rpx;
+}
+/***采购详情**/
+.purchasexq{
+  background: #fff;
+}
+.purchasexq .tit{
+  padding: 0 15rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  font-size: 28rpx;
+  color: #232323;
+}
+.purchasexq .info{
+  padding: 25rpx 15rpx;
+}
+.purchasexq .info .li{
+  font-size: 24rpx;
+  color: #575757;
+  line-height: 60rpx;
+}
+/***采购要求**/
+.purchaseyq{
+  background: #fff;
+}
+.purchaseyq .tit{
+  padding: 0 15rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  font-size: 28rpx;
+  color: #232323;
+}
+.purchaseyq .info{
+  padding: 25rpx 15rpx;
+}
+.purchaseyq .info .li{
+  font-size: 24rpx;
+  color: #575757;
+  line-height: 60rpx;
+}
+
+/***推荐**/
+.samerecom{
+  background: #fff;
+}
+.samerecom .tit{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  padding: 0 15rpx;
+  font-size: 28rpx;
+  color: #232323;
+}
+.recom .item{
+  padding: 0 20rpx;
+  background: #fff;
+}
+.recom .item .ite{
+  width: 710rpx;
+  height: 100rpx;
+  border-bottom: 1rpx dashed #d2d2d2;
+  overflow: hidden;
+  padding: 35rpx 0;
+}
+.recom .item .ite .dd{
+  height: 40rpx;
+  width: 710rpx;
+  overflow: hidden;
+}
+.recom .item .ite .dd .caps{
+  width:65rpx;
+  height: 35rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  font-size: 22rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35rpx;
+  background: #0cc8a5;
+}
+.recom .item .ite .dd .tit{
+  width: 500rpx;
+  height: 35rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #373737;
+  line-height: 35rpx;
+  font-weight: bold;
+  overflow: hidden;
+}
+.recom .item .ite .dd .alt{
+  font-size: 36rpx;
+  color: #373737;
+  line-height: 35rpx;
+}
+.recom .item .ite .dt{
+  height: 35rpx;
+  overflow: hidden;
+  line-height: 35rpx;
+}
+.recom .item .ite .dt text{
+  font-size: 22rpx;
+  color: #777777;
+  line-height: 35rpx;
+  margin-right: 20rpx;
+}
+/**回到顶部**/
+.fixedRight{
+  width: 90rpx;
+  height: 210rpx;
+  position: fixed;
+  right: 25rpx;
+  bottom: 40rpx;
+  z-index: 500;
+}
+.fixedRight .circular{
+  width: 95rppx;
+  height: 95rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.fixedRight .circular image{
+  width: 95rpx;
+  height: 95rpx;
+  display: block;
+}
+/***底部**/
+.fixedfoot{
+  position: fixed;
+  width: 750rpx;
+  height: 135rpx;
+  bottom: 0;
+  left: 0;
+  background: #eeeeee;
+  z-index: 500;
+}
+.fixedfoot .foot{
+  height: 85rpx;
+  width: 750rpx;
+}
+.fixedfoot .lfoot{
+  padding: 0 20rpx;
+}
+.fixedfoot .foot .section{
+  width: 100rpx;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  height: 85rpx;
+}
+.fixedfoot .foot .section .img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 0 auto;
+}
+.fixedfoot .foot .section .img image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.fixedfoot .foot .section .text{
+  font-size: 24rpx;
+  color: #434343;
+  text-align: center;
+  line-height: 25rpx;
+  margin-top: 15rpx;
+}
+button::after{
+  border:0;
+}
+.fixedfoot .foot .btnwr{
+  width: 470rpx;
+  height: 75rpx;
+}
+.fixedfoot .foot .btnwr .ljcg{
+   width: 470rpx;
+  height: 75rpx;
+  text-align: center;
+  line-height: 75rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  background:linear-gradient(to right, #22c8e0, #15c8ba);
+  border-radius: 38rpx;
+  overflow: hidden;
+}

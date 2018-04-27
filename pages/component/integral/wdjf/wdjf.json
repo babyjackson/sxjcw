@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的积分",
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#fff"
+}

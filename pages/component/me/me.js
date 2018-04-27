@@ -13,17 +13,17 @@ Page({
         name:"优惠券"
       },
       {
-        url: "../hykw/hykxq/hykxq",
+        url: "/pages/component/clubcard/vipxq/vipxq",
         imgsrc: "/images/hyk.png",
         name: "会员卡"
       },
       {
-        url: "../jf/wdjf/wdjf",
+        url: "/pages/component/integral/wdjf/wdjf",
         imgsrc: "/images/wdjf.png",
         name: "我的积分"
       },
       {
-        url: "../gq/gy/gy",
+        url: "/pages/component/supply/gy/gy",
         imgsrc: "/images/wdgq.png",
         name: "我的供求"
       }

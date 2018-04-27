@@ -1,0 +1,21 @@
+<!--pages/component/searchlist/searchlist.wxml-->
+<!--搜索-->
+<view class="searchw">
+  <view class="ico fl"><icon type="search"/></view>
+  <input type="text" disabled='true' value="护肤品"/>
+</view>
+<!--list-->
+<view class="searchlist">
+  <view class="item clearfix" wx:for="{{searchlist}}" wx:key="id">
+    <navigator class="figure fl" url="{{item.url}}">
+      <image src="{{item.img}}"></image>
+    </navigator>
+    <view class="dl fr">
+      <view class="tit">{{item.tit}}</view>
+      <view class="price clearfix">
+        <view class="pri fl">¥{{item.price}}</view>
+        <navigator class="ckxq fr" url="{{item.url}}">查看详情</navigator>
+      </view>
+    </view>
+  </view>
+</view>

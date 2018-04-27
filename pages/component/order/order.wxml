@@ -211,8 +211,7 @@
             </view>
           </navigator>
         <view class="btn clearfix">
-          <navigator class="xian fl">查看物流</navigator>
-          <navigator class="bgred fr" url="../tjpj/tjpj">评价</navigator>
+          <navigator class="bgred fr" url="/pages/component/evaluate/evalu/evalu">评价</navigator>
         </view> 
       </view>
     </view>

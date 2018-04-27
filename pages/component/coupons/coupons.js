@@ -10,64 +10,40 @@ Page({
       {
         je:"10",
         tips:"购买100元使用",
-        classn:"zsbg",
-        leix:"蔬菜",
-        tit:"蔬菜商品类专用优惠券",
-        yimgs:"/images/xdt.png",
         time:"使用时间：2017.6.8-2017.12.2",
         ljurl:""
       },
       {
         je: "50",
         tips: "购买100元使用",
-        classn: "lsbg",
-        leix: "蔬菜",
-        tit: "蔬菜商品类专用优惠券",
-        yimgs: "/images/kgqt.png",
         time: "使用时间：2017.6.8-2017.12.2",
         ljurl: ""
       }
     ],
     ysy:[
       {
-        je: "10",
+        je: "50",
         tips: "购买100元使用",
-        classn: "hsbg",
-        leix: "蔬菜",
-        tit: "蔬菜商品类专用优惠券",
-        yimgs: "/images/yyjsy.png",
         time: "使用时间：2017.6.8-2017.12.2",
         ljurl: ""
       },
       {
         je: "50",
         tips: "购买100元使用",
-        classn: "hsbg",
-        leix: "蔬菜",
-        tit: "蔬菜商品类专用优惠券",
-        yimgs: "/images/yyjsy.png",
         time: "使用时间：2017.6.8-2017.12.2",
         ljurl: ""
       }
     ],
     ygq: [
       {
-        je: "10",
+        je: "50",
         tips: "购买100元使用",
-        classn: "hsbg",
-        leix: "蔬菜",
-        tit: "蔬菜商品类专用优惠券",
-        yimgs: "/images/ygq.png",
         time: "使用时间：2017.6.8-2017.12.2",
         ljurl: ""
       },
       {
         je: "50",
         tips: "购买100元使用",
-        classn: "hsbg",
-        leix: "蔬菜",
-        tit: "蔬菜商品类专用优惠券",
-        yimgs: "/images/ygq.png",
         time: "使用时间：2017.6.8-2017.12.2",
         ljurl: ""
       }

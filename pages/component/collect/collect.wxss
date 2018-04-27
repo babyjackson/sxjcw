@@ -19,6 +19,9 @@ content: ".";
   clear: both;
   visibility: hidden;
 }
+.h-100{
+  height: 100rpx;
+}
 .h120{
   height: 120rpx;
 }
@@ -68,10 +71,12 @@ content: ".";
 .con-item .item .qgm{
   width: 120rpx;
   height:50rpx;
-  border:2rpx solid #252525;
+  border:2rpx solid #0cc8a5;
   border-radius: 4rpx;
   text-align: center;
   line-height: 50rpx;
+  font-size: 23rpx;
+  color: #0cc8a5;
 }
 .cnxh{
   background-color: #efefef;
@@ -82,73 +87,7 @@ content: ".";
   padding: 40rpx 0 25rpx 0;
   text-align: center;
 }
-.recommendxg{
-  padding: 0 16rpx;
-}
-.recommendxg view-item{
-  width: 330rpx;
-  float: left;
-  padding: 10rpx;
-  height: 490rpx;
-  margin-bottom: 15rpx;
-  background: #fff;
-}
-.recommendxg view-item .img{
-  width: 330rpx;
-  height: 350rpx;
-}
-.recommendxg view-item image{
-  width: 330rpx;
-  height: 350rpx;
-}
-.recommendxg view-item .tit{
-  font-size: 24rpx;
-  color: #212121;
-  line-height: 30rpx;
-  height: 65rpx;
-  width: 330rpx;
-  overflow: hidden;
-  margin: 10rpx 0rpx 0 0rpx;
-}
-.recommendxg view-item .pj{
-  width: 330rpx;
-  height: 36rpx;
-  border:2rpx solid #23242a;
-  display: flex;
-  font-size: 24rpx;
-  margin-top: 15rpx;
-}
-.recommendxg view-item .pj view{
-  width: 50%;
-  height: 36rpx;
-  text-align: center;
-  line-height: 36rpx;
-  font-size: 24rpx;
-  color:#23242a; 
-}
-.recommendxg view-item .pj button{
-  width: 50%;
-  outline: 0;
-  border: 0;
-  display: block;
-  height: 32rpx;
-  line-height: 32rpx;
-  text-align: center;
-  color: #fff;
-  border-radius: 0;
-  background: #23242a;
-  font-size: 24rpx;
-  }
-button::after{
-  border: 0;
-}
-.recommendxg view-item:nth-of-type(odd){
-   float: left;
- } 
-.recommendxg view-item:nth-of-type(even){
-   float: right;
- }
- .tabswitch{
+.tabswitch{
    width: 750rpx;
    padding: 0 20rpx;
    height: 95rpx;
@@ -165,7 +104,7 @@ button::after{
     text-align: center;
   }
   .tabswitch .titem.active{
-    border-bottom: 4rpx solid #23242a;
+    border-bottom: 4rpx solid #0cc8a5;
   }
 .tabswitch .titem .num{
   width: 33rpx;
@@ -174,10 +113,88 @@ button::after{
   font-size: 21rpx;
   color: #ffffff;
   border-radius: 50%;
-  background: #ffca12;
+  background: #0cc8a5;
   position: absolute;
   top: 10rpx;
   right: 25rpx;
   line-height: 33rpx;
   text-align: center;
+}
+/**没有收藏**/
+.orderno{
+  height:660rpx;
+  width: 750rpx;
+  background: #ffffff;
+}
+.orderno .img{
+  width: 460rpx;
+  height: 280rpx;
+  margin: 0 auto;
+}
+.orderno .img image{
+  display: block;
+  width: 460rpx;
+  height: 280rpx;
+}
+.orderno .tips{
+  font-size: 30rpx;
+  color: #484b48;
+  text-align: center;
+  line-height: 30rpx;
+}
+/***猜你喜欢***/
+.wander{
+  padding: 45rpx 15rpx 0 15rpx;
+  background: #fff;
+}
+.wander .item{
+  width: 720rpx;
+  height: 250rpx;
+  overflow: hidden;
+  margin-bottom: 45rpx;
+}
+.wander .item .figure{
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+  overflow: hidden;
+  background: #f7f7f7;
+  border:1rpx solid #f7f7f7;
+}
+.wander .item .figure image{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+}
+.wander .item .dl{
+  width: 380rpx;
+  height: 250rpx;
+  margin-left: 35rpx;
+}
+.wander .item .dl .tit{
+  width: 380rpx;
+  margin: 35rpx 0;
+  max-height: 60rpx;
+  font-size: 24rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  color: #222222;
+}
+.wander .item .dl .price{
+  height: 90rpx;
+  overflow: hidden;
+}
+.wander .item .dl .price .xpri{
+  font-size: 30rpx;
+  color: #000000;
+  line-height: 50rpx;
+  height: 50rpx;
+  overflow: hidden;
+}
+.wander .item .dl .price .ypri{
+  font-size: 24rpx;
+  color: #a9a9a9;
+  line-height: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
 }

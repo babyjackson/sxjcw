@@ -1,0 +1,110 @@
+<!--pages/component/store/detail/detail.wxml-->
+<!--banner图-->
+<view class="bannerw">
+  <view class="ban">
+    <swiper class="bans" current="0" bindchange="EventHandle" data-length="{{ibanner.length}}">
+      <block wx:for="{{ibanner}}" wx:key="id" wx:for-index="{{index}}">
+        <swiper-item>
+          <navigator class="img" url="{{item.url}}" data->
+            <image src="{{item.img}}"></image>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--分页-->
+  <view class="pageban">
+    {{current}}/{{length}}
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--nature-->
+<view class="nature">
+  <view class="h-40"></view>
+  <view class="titw clearfix">
+    <view class="tit fl">油烟机批发经销火王厨电加盟火王油烟机T型油烟机 D12</view>
+    <view class="xian2 fl"></view>
+    <view class="scw fr">
+      <view class="sc" wx:if="{{false}}">
+        <view class="ico">
+          <image src="/images/yscwjx.png"></image>
+        </view>
+        <view class="text">已收藏</view>
+      </view>
+      <view class="sc" wx:else>
+        <view class="ico">
+          <image src="/images/wscwjx.png"></image>
+        </view>
+        <view class="text">收藏</view>
+      </view>
+    </view>
+  </view>
+  <!--价格电议-->
+  <view class="dyprice">
+     价格电议
+  </view>
+</view>
+<!--供应地址-->
+<view class="supaddr">
+  <view class="lab fl">供应地址</view>
+  <view class="addr fr">江苏-南京-鼓楼 XX街-XX路</view>
+</view>
+<view class="hb-30"></view>
+<!--联系详情-->
+<view class="relation">
+  <view class="tit">联系详情</view>
+  <view class="info">
+    <view class="linkman">
+      <view class="ico fl"><image src="/images/linkmanico.png"></image></view>
+      联系人 :刘先生
+    </view>
+    <view class="tel">
+      <view class="ico fl"><image src="/images/telico.png"></image></view>
+      联系电话:159-xxxx-3200
+    </view>
+  </view>
+</view>
+<view class="hb-30"></view>
+<!--认证-->
+<view class="promise clearfix">
+  <view class="item fl" wx:for="{{promise}}" wx:key="id">
+    <view class="ico fl"><image src="/images/promiseico.png"></image></view>
+    {{item.name}}
+  </view>
+</view>
+<!--商品描述-->
+<view class="describe">
+  <view class="tit">商品描述</view>
+  <view class="text">商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述</view>
+</view>
+<view class="h-60"></view>
+<!--回到顶部-->
+<view class="fixedRight">
+  <view class="scroll_top circular" bindtap="goTop">
+    <image src="/images/backtop.png"></image>
+  </view>
+</view>
+<view class="h-135"></view>
+<!--底部-->
+<view class="fixedfoot">
+  <view class="h-30"></view>
+  <view class="foot clearfix">
+    <view class="lfoot fl clearfix">
+      <button class="section fl">
+        <view class="sf">
+          <view class="img"><image src="/images/dfootscico.png"></image></view>
+          <view class="text">收藏</view>
+        </view>
+      </button>
+      <button class="section fl">
+        <view class="sf">
+          <view class="img"><image src="/images/dfoottelico.png"></image></view>
+          <view class="text">客服</view>
+        </view>
+      </button>
+    </view>
+    <view class="fl btnwr clearfix">
+      <navigator class="ljcg fl" url="/pages/component/demand/yddetail/yddetail">立即采购</navigator>
+    </view>
+  </view>
+</view>

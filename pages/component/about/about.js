@@ -9,32 +9,32 @@ Page({
       {
         fsz:"电话",
         fs:" 15647853210",
-        imgUrl:"/img/dh.png"
+        imgUrl:"/images/dh.png"
       },
       {
         fsz: "微信",
         fs: " 15879413310",
-        imgUrl: "/img/wx.png"
+        imgUrl: "/images/wx.png"
       },
       {
         fsz: "QQ",
         fs: " 24587952",
-        imgUrl: "/img/qq.png"
+        imgUrl: "/images/qq.png"
       },
       {
         fsz: "邮箱",
         fs: " 1548364445@qq.con",
-        imgUrl: "/img/yx.png"
+        imgUrl: "/images/yx.png"
       },
       {
         fsz: "联系人",
         fs: " 王某某",
-        imgUrl: "/img/kxr.png"
+        imgUrl: "/images/kxr.png"
       },
       {
         fsz: "地址",
         fs: " 临翔区旗山路452号面临小吃城45号商铺",
-        imgUrl: "/img/dz.png"
+        imgUrl: "/images/dz.png"
       }
     ]
   },

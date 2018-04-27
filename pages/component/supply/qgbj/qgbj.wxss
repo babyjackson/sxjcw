@@ -1,0 +1,162 @@
+/* pages/component/gq/qgbj/qgbj.wxss */
+page{
+  background: #fff;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wpform{
+  padding: 0 30rpx;
+}
+.section{
+  width: 690rpx;
+  height: 100rpx;
+}
+.xian{
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.section .section_tit{
+  width: 155rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #000000;
+  position: relative;
+}
+.section .section_tit .xin{
+  width: 12rpx;
+  height: 12rpx;
+  margin-top: 35rpx;
+  padding: 2rpx;
+}
+.section .section_tit .xin image{
+  width: 12rpx;
+  height: 12rpx;
+  display: block;
+}
+.section .section_tit text{
+  line-height: 100rpx;
+  font-size: 26rpx;
+  color: #000000;
+}
+.section picker{
+  width:530rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #292727;
+}
+.h15{
+  height: 15rpx;
+  background: #f4f4f4;
+}
+.section .input{
+  width:530rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+  color: #292727;
+  overflow: hidden;
+}
+.section .input input{
+  width:530rpx;
+  height: 100rpx;
+  border: 0;
+  outline: 0;
+}
+.section textarea{
+  width: 510rpx;
+  height: 60rpx;
+  background: #fff;
+  font-size: 28rpx;
+  padding: 20rpx 5rpx;
+}
+.uploadImg .upload_tit{
+  width: 145rpx;
+  height: 165rpx;
+  line-height: 165rpx;
+  font-size: 28rpx;
+  color: #292727;
+  overflow: hidden;
+}
+.uploadImg .choosePic{
+  width: 540rpx;
+  padding: 30rpx 0rpx;
+}
+.uploadImg .choosePic view-item{
+  display: block;
+  width: 115rpx;
+  height: 115rpx;
+  float: left;
+  margin-right: 20rpx;
+  margin-bottom: 15rpx;
+  position: relative;
+  border:2rpx solid #d4d4d4;
+  border-radius: 1rpx;
+}
+.uploadImg .choosePic view-item image{
+  width: 115rpx;
+  height: 115rpx;
+  display: block;
+}
+.uploadImg .choosePic view-item .delimg{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: -15rpx;
+  top: -10rpx;
+  z-index: 5;
+ }
+.uploadImg .choosePic view-item .delimg image{
+  width: 25rpx;
+  height: 25rpx;
+  display: block;
+  margin-left: 15rpx;
+}
+.uploadImg .choosePic .img{
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin-right: 15rpx;
+  border:2rpx solid #ebebeb;
+  border-radius: 1rpx;
+}
+.uploadImg .choosePic .img image{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+}
+.confirm{
+  width: 715rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 30rpx auto;
+}
+.confirm button{
+  background: #0cc8a5;
+  height: 90rpx;
+  width: 715rpx;
+  border-radius: 10rpx;
+  margin: 0;
+  padding: 0;
+  font-size: 32rpx;
+  color: #ffffff;
+  display: block;
+}
+button::after{
+  border: 0;
+  outline: 0;
+}

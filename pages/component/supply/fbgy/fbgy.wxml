@@ -1,0 +1,90 @@
+<!--pages/component/gq/fbgy/fbgy.wxml-->
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="wpform">
+    <view class="section xian">
+      <view class="section_tit fl">
+        <view class="xin fl">
+          <image src="/images/hxin.jpg"></image>
+        </view>
+        <text>选择区域</text>
+      </view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" class="fl" name="addre">
+        <view class="picker">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
+      </picker>
+    </view>
+    <view class="section clearfix">
+      <view class="section_tit fl">
+        <view class="xin fl"><image src="/images/hxin.jpg"></image></view>
+        <text>详细地址</text>
+      </view>
+      <view class="input">
+        <input placeholder="街道、楼牌号，50字以内" name="door"></input>
+      </view>
+    </view>
+    <view class="h15"></view>
+    <view class="section clearfix">
+      <view class="section_tit fl">
+        <text>价格</text>
+      </view>
+      <view class="input fl">
+        <input placeholder="请输入金额，或面议" name="price"></input>
+      </view>
+    </view>
+    <view class="h15"></view>
+    <view class="section clearfix xian">
+      <view class="section_tit fl">
+        <view class="xin fl"><image src="/images/hxin.jpg"></image></view>
+        <text>标题</text>
+      </view>
+      <view class="input fl">
+        <input placeholder="请输入金额，或面议" name="title"></input>
+      </view>
+    </view>
+    <view class="section clearfix">
+      <view class="section_tit fl">
+        <view class="xin fl"><image src="/images/hxin.jpg"></image></view>
+        <text>描述</text>
+      </view>
+      <view class="input fl">
+        <textarea placeholder="不得超过100字" name="description"></textarea>
+      </view>
+    </view>
+    <view class="h15"></view>
+    <view class="section clearfix xian">
+      <view class="section_tit fl">
+        <view class="xin fl"><image src="/images/hxin.jpg"></image></view>
+        <text>联系人</text>
+      </view>
+      <view class="input fl">
+        <input placeholder="" name="name"></input>
+      </view>
+    </view>
+    <view class="section clearfix xian">
+      <view class="section_tit fl">
+        <view class="xin fl"><image src="/images/hxin.jpg"></image></view>
+        <text>手机号</text>
+      </view>
+      <view class="input fl">
+        <input placeholder="" type="number" name="tel"></input>
+      </view>
+    </view>
+    <!--上传图片-->
+    <view class="uploadImg clearfix">
+      <view class="upload_tit fl">上传图片</view>
+      <view class="choosePic fl">
+        <view class="clearfix fl">
+          <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx' wx:key="id">
+            <image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image>
+            <view class="delimg" bindtap='deleteImg'><image src="/img/delimg.png"></image></view>
+          </view-item>
+        </view>
+        <view class="img fl" bindtap="chooseImage">
+          <image src="/images/fbimg.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="confirm">
+    <button formType="submit">确认修改</button>
+  </view>
+</form>

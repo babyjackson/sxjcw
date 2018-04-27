@@ -4,7 +4,7 @@
     <!--商品-->
     <view class="tkgoods clearfix">
       <view class="figure fl">
-        <image src="/img/allimg.jpg"></image>
+        <image src="/images/allimg.png"></image>
       </view>
       <view class="dl fl">
         <view class="tit">智能运动手环心率心跳血压监测防水多功能跑步记计步女健康手表男</view>
@@ -57,12 +57,12 @@
           <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx' wx:key="id">
             <image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image>
             <view class="delimg" bindtap='deleteImg'>
-              <image src="/img/delimg.png"></image>
+              <image src="/images/delimg.png"></image>
             </view>
           </view-item>
         </view>
         <view class="img fl" bindtap="chooseImage">
-          <image src="/img/scpzico.png"></image>
+          <image src="/images/scpzico.png"></image>
         </view>
     </view>
     </view>

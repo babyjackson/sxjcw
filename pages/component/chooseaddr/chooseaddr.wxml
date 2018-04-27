@@ -1,14 +1,7 @@
 <!--pages/component/dzgl/dzgl.wxml-->
-<!--没有地址-->
-<view class="noshdz" style="display:none">
-  <view class="h105"></view>
-  <view class="img"><image></image></view>
-  <view class="mtit">您还没有地址哦，赶紧添加一个吧~</view>
-  <view class="h40"></view>
-  <navigator url="../xzdz/xzdz"><button class="tjxdz">添加新地址</button></navigator>
-</view>
+
 <!--有地址-->
-<view class="hasshdz">
+<view class="hasshdz" wx:if="{{listdz}}">
  <view class="address clearfix" wx:for="{{listdz}}" wx:for-index="index" wx:key="id">
  <view-item bindtap="selectClick">
  <view class="fl dz">
@@ -19,7 +12,6 @@
     <image src="/img/danxuanxz.png"></image>
   </view-->
  </view-item>
-  
  </view>
  <view class="adddz">
   <navigator class="addzW clearfix" url="/pages/component/addaddr/addaddr">
@@ -27,4 +19,14 @@
     <view class="fr zi">新增收货地址</view>
   </navigator>
  </view>
+</view>
+<!--没有地址-->
+<view class="noshdz" wx:else>
+  <view class="h105"></view>
+  <view class="img"><image src='/images/noaddrimg.png'></image></view>
+  <view class="mtit">您还没有地址哦，赶紧添加一个吧~</view>
+  <view class="h40"></view>
+  <navigator url="/pages/component/addaddr/addaddr">
+    <button class="tjxdz">添加新地址</button>
+  </navigator>
 </view>

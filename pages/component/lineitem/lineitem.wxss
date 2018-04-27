@@ -25,7 +25,7 @@ page{
   width: 750rpx;
   height: 200rpx;
   overflow: hidden;
-  background: #ffcf29;
+  background: linear-gradient(to right, #22c8e0, #15c8ba);
 }
 .ostatus .dl{
   width: 370rpx;
@@ -185,7 +185,7 @@ page{
   color: #141414;
 }
 .payinfo .section .yellow{
-  color: #ffcf29;
+  color: #0cc8a5;
 }
 .contactway{
   height: 155rpx;
@@ -217,10 +217,10 @@ button::after{
   border: 0;
 }
 .contactway button.seller{
-  background: #ffca12;
+  background: #61e8cf;
 }
 .contactway button.calltel{
-  background: #23242a;
+  background: #0cc8a5;
 }
 .contactway button text{
   line-height: 85rpx;
@@ -243,73 +243,46 @@ button::after{
   padding: 40rpx 0 25rpx 0;
   text-align: center;
 }
-.recommendxg{
-  padding: 0 16rpx;
+/***猜你喜欢***/
+.like{
+  padding: 0 20rpx;
 }
-.recommendxg view-item{
-  width: 330rpx;
-  float: left;
-  padding: 10rpx;
-  height: 490rpx;
-  margin-bottom: 15rpx;
+.like .item{
+  width: 340rpx;
+  height: 415rpx;
   background: #fff;
-}
-.recommendxg view-item .img{
-  width: 330rpx;
-  height: 350rpx;
-}
-.recommendxg view-item image{
-  width: 330rpx;
-  height: 350rpx;
-}
-.recommendxg view-item .tit{
-  font-size: 24rpx;
-  color: #212121;
-  line-height: 30rpx;
-  height: 65rpx;
-  width: 330rpx;
+  border-radius: 15rpx;
   overflow: hidden;
-  margin: 10rpx 0rpx 0 0rpx;
+  margin-bottom: 40rpx;
 }
-.recommendxg view-item .pj{
-  width: 330rpx;
-  height: 36rpx;
-  border:2rpx solid #23242a;
-  display: flex;
+.like .item:nth-of-type(odd){
+  float: left;
+}
+.like .item:nth-of-type(even){
+  float: right;
+}
+.like .item .figure{
+  padding: 35rpx 35rpx;
+}
+.like .item .figure image{
+  width: 270rpx;
+  height: 250rpx;
+}
+.like .item .tit{
+  height: 35rpx;
+  overflow: hidden;
+  margin: 0 10rpx;
   font-size: 24rpx;
-  margin-top: 15rpx;
-}
-.recommendxg view-item .pj view{
-  width: 50%;
-  height: 36rpx;
+  color: #383838;
+  line-height: 35rpx;
   text-align: center;
-  line-height: 36rpx;
-  font-size: 24rpx;
-  color:#23242a; 
 }
-.recommendxg view-item .pj button{
-  width:50%;
-  outline:0;
-  border:0;
-  display:block;
-  height:36rpx;
-  line-height:36rpx;
-  text-align:center;
-  color:#fff;
-  border-radius:0;
-  background:#23242a;
-  font-size:24rpx;
-  padding:0;
+.like .item .price{
+  font-size: 26rpx;
+  color: #0cc8a5;
+  line-height: 35rpx;
+  text-align: center;
 }
-button::after{
-  border: 0;
-}
-.recommendxg view-item:nth-of-type(odd){
-   float: left;
- } 
-.recommendxg view-item:nth-of-type(even){
-   float: right;
- }
  /**退款**/
  .refund{
    width: 750rpx;
@@ -329,12 +302,12 @@ button::after{
   width:100rpx;
 font-size:26rpx;
 color:#fff;
-border:1rpx solid #202020;
+border:1rpx solid #61e8cf;
 height:40rpx;
 margin-top:20rpx;
 margin-right:20rpx;
 text-align:center;
 line-height:40rpx;
 border-radius:10rpx;
-background: #202020;
+background: #61e8cf;
 }

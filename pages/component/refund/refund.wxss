@@ -176,7 +176,7 @@ page{
 }
 .tkamount .amount{
   font-size: 24rpx;
-  color: #ffca12;
+  color: #0cc8a5;
   line-height: 70rpx;
   margin-left: 25rpx;
 }
@@ -277,7 +277,7 @@ page{
   height: 75rpx;
   text-align: center;
   line-height: 75rpx;
-  background: #ffca12;
+  background: #0cc8a5;
   color: #fff;
   font-size: 30rpx;
   position: fixed;

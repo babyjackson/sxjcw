@@ -54,6 +54,13 @@ Page({
   /**确定选择***/
   surechoose: function (e) {
     let active = this.data.active;
+    let tkcause = this.data.tkcause;
+    let maskcause = this.data.maskcause[0].cause;
+    if(tkcause == ""){
+      this.setData({
+        tkcause: maskcause
+      })
+    }
     active = false;
     this.setData({
       active:active

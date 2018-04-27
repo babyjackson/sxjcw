@@ -239,5 +239,5 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   line-height: 45rpx;
 }
 .hasnogoods .tips text{
-  color: #2ad2ff;
+  color: #0cc8a5;
 }
